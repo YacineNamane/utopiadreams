@@ -1,0 +1,106 @@
+.app {
+  font-family: "roboto";
+}
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./assets/UDImages/BackgroundHome.jpg");
+  background-size: cover; /* Ajuste l'image pour couvrir toute la fenêtre */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Évite que l'image se répète */
+  background-attachment: fixed; /* Fixe l'image en arrière-plan lors du défilement */
+}
+.Banner {
+  display: flex;
+  justify-content: space-around;
+}
+.landing-page-find {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.landing-page-find h2 {
+  font-size: 2.8em;
+  font-weight: bold;
+}
+.landing-page-find a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 60px;
+  background-color: aliceblue;
+  color: black;
+  font-family: "roboto";
+  font-size: 2em;
+  font-weight: bold;
+  padding: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.landing-page-find a:hover {
+  color: white;
+  background-color: #131516de;
+}
+.logo-ud img {
+  max-width: 290px;
+}
+.logo-ud {
+  height: 100px;
+}
+.nav-pannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  height: 100px;
+}
+.nav-pannel a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+.nav-pannel a:hover {
+  color: #131516de;
+}
+
+/*Gallery*/
+/* src/components/Wallpapers.css */
+
+.wallpapers-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filters button:hover {
+  background-color: #ddd;
+}
+
+.wallpapers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.wallpaper-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
