@@ -1,5 +1,6 @@
-.app {
+body {
   font-family: "roboto";
+  background-color: #14121e;
 }
 .landing-page {
   display: flex;
@@ -74,33 +75,134 @@
 .wallpapers-container {
   padding: 20px;
   text-align: center;
+  background-color: #14121e;
+  position: relative;
 }
 
 .filters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour les 4 boutons */
+  height: 150px;
+  gap: 10px;
   margin-bottom: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .filters button {
-  margin: 5px;
   padding: 10px 20px;
   border: none;
-  background-color: #f0f0f0;
+  background: linear-gradient(90deg, #c589ca, #9782dc, #2981ea);
+  color: white; /* Couleur du texte pour qu'il soit visible sur le dégradé */
   cursor: pointer;
   border-radius: 5px;
+  font-size: 1.6em;
+  font-weight: 700;
+  transition: background 0.5s ease; /* Transition pour le changement de couleur */
 }
 
 .filters button:hover {
-  background-color: #ddd;
+  background: linear-gradient(90deg, #9782dc, #2981ea, #c589ca);
+}
+
+.filters button:nth-child(1),
+.filters button:nth-child(4) {
+  grid-column: span 1;
+}
+
+.filters button:nth-child(2),
+.filters button:nth-child(3) {
+  grid-column: span 2;
 }
 
 .wallpapers-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
+  opacity: 0; /* Départ invisible */
+  transform: scale(0.95); /* Départ réduit */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.wallpapers-grid.visible {
+  opacity: 1; /* Visible */
+  transform: scale(1); /* Échelle normale */
+}
+
+.wallpaper-item {
+  position: relative; /* Pour positionner le bouton à l'intérieur de l'élément */
+  overflow: hidden; /* Pour s'assurer que le bouton ne dépasse pas */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .wallpaper-item img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.3s ease; /* Pour le zoom */
+}
+
+.wallpaper-item:hover img {
+  transform: scale(1.05); /* Zoom léger au survol */
+}
+
+.wallpaper-item:hover .get-button {
+  opacity: 1; /* Rendre le bouton visible */
+  transform: translateY(0); /* Faire apparaître le bouton depuis le bas */
+}
+
+.get-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0; /* Invisible par défaut */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Pour la transition */
+  transform: translateY(10px); /* Démarrer en bas */
+}
+
+/*Wallpapper Détails */
+.wallpaper-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.wallpaper-page img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.img-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+.download-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.download-button {
+  width: fit-content;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Pour la transition */
 }

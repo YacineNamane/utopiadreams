@@ -1,6 +1,10 @@
-import Header from "../components/Header";
+import WallpapersDetaiils from "../components/WallpapersDetails";
 
 function ArtworkDetails() {
-  return <Header />;
+  return (
+    <div>
+      <WallpapersDetaiils />
+    </div>
+  );
 }
 export default ArtworkDetails;
