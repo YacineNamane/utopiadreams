@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const WallpaperPage = () => {
-  const { id } = useParams(); // Obtenir l'ID du wallpaper depuis l'URL
+  const { id } = useParams();
   const [wallpaper, setWallpaper] = useState(null);
 
   useEffect(() => {
@@ -17,6 +17,23 @@ const WallpaperPage = () => {
 
   if (!wallpaper) return <div>Loading...</div>;
 
+  const downloadImage = async (url, name) => {
+    try {
+      const response = await fetch(url);
+      const blob = await response.blob();
+
+      const link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+      link.setAttribute("download", name);
+
+      document.body.appendChild(link);
+      link.click();
+
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error("Erreur lors du téléchargement de l’image", error);
+    }
+  };
   return (
     <div className="wallpaper-page">
       <div className="wallpaper-tag">
@@ -26,14 +43,13 @@ const WallpaperPage = () => {
         <img src={wallpaper.src} alt={wallpaper.name} />
       </div>
       <div className="download-button-container">
-        <a
-          href={wallpaper.src}
-          download={wallpaper.name}
+        <button
           className="download-button"
           title="Download"
+          onClick={() => downloadImage(wallpaper.src, wallpaper.name)}
         >
           Download
-        </a>
+        </button>
       </div>
     </div>
   );
