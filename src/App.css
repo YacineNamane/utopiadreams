@@ -2,6 +2,9 @@ body {
   font-family: "roboto";
   background-color: #14121e;
 }
+
+/*Landing Page - Banner */
+
 .landing-page {
   display: flex;
   justify-content: space-between;
@@ -9,14 +12,19 @@ body {
   height: 100vh;
   width: 100%;
   background-image: url("./assets/UDImages/BackgroundHome.jpg");
-  background-size: cover; /* Ajuste l'image pour couvrir toute la fenêtre */
-  background-position: center; /* Centre l'image */
-  background-repeat: no-repeat; /* Évite que l'image se répète */
-  background-attachment: fixed; /* Fixe l'image en arrière-plan lors du défilement */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .Banner {
   display: flex;
   justify-content: space-around;
+}
+.Banner-default {
+  display: flex;
+  justify-content: space-around;
+  background-color: aliceblue;
+  height: 10vh;
 }
 .landing-page-find {
   display: flex;
@@ -69,8 +77,7 @@ body {
   color: #131516de;
 }
 
-/*Gallery*/
-/* src/components/Wallpapers.css */
+/*Wallpapers Page - Filters*/
 
 .wallpapers-container {
   padding: 20px;
@@ -81,7 +88,7 @@ body {
 
 .filters {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour les 4 boutons */
+  grid-template-columns: repeat(4, 1fr);
   height: 150px;
   gap: 10px;
   margin-bottom: 20px;
@@ -94,15 +101,19 @@ body {
   padding: 10px 20px;
   border: none;
   background: linear-gradient(270deg, #01ecd4, #b1ea9e, #fde19d);
-  color: white; /* Couleur du texte pour qu'il soit visible sur le dégradé */
+  color: white;
   cursor: pointer;
   border-radius: 5px;
   font-size: 1.6em;
   font-weight: 700;
-  transition: background-color 0.5s ease; /* Transition pour le changement de couleur */
+  transition: transform 0.3s ease;
 }
-
-.filters button:hover button {
+.filters button span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.filters button:hover span {
+  transform: scale(1.2);
 }
 
 .filters button:nth-child(1),
@@ -119,19 +130,19 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
-  opacity: 0; /* Départ invisible */
-  transform: scale(0.95); /* Départ réduit */
+  opacity: 0;
+  transform: scale(0.95);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .wallpapers-grid.visible {
-  opacity: 1; /* Visible */
-  transform: scale(1); /* Échelle normale */
+  opacity: 1;
+  transform: scale(1);
 }
 
 .wallpaper-item {
-  position: relative; /* Pour positionner le bouton à l'intérieur de l'élément */
-  overflow: hidden; /* Pour s'assurer que le bouton ne dépasse pas */
+  position: relative;
+  overflow: hidden;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -140,16 +151,16 @@ body {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  transition: transform 0.3s ease; /* Pour le zoom */
+  transition: transform 0.3s ease;
 }
 
 .wallpaper-item:hover img {
-  transform: scale(1.05); /* Zoom léger au survol */
+  transform: scale(1.05);
 }
 
 .wallpaper-item:hover .get-button {
-  opacity: 1; /* Rendre le bouton visible */
-  transform: translateY(0); /* Faire apparaître le bouton depuis le bas */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .get-button {
@@ -162,46 +173,133 @@ body {
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  opacity: 0; /* Invisible par défaut */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Pour la transition */
-  transform: translateY(10px); /* Démarrer en bas */
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
 }
 
 /*Wallpapper Détails */
+
 .wallpaper-page {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 100vh;
 }
-.wallpaper-page img {
-  height: 100%;
-  object-fit: contain;
-  border-radius: 10px;
+.mockup-container {
+  position: relative;
+  width: 530px;
+  margin: 20px auto;
 }
-.img-details-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.phone-mockup {
   width: 100%;
-  height: 450px;
-  overflow: hidden;
+  height: auto;
 }
+.wallpaper-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wallpaper-tag h2 {
+  text-transform: uppercase;
+  color: aliceblue;
+}
+.wallpaper-in-mockup {
+  position: absolute;
+  top: 12%;
+  left: 32.2%;
+  width: 36.7%;
+  height: 76.5%;
+  object-fit: cover;
+  border-radius: 22px;
+  transform: rotate(-1deg);
+}
+
 .download-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 38px;
 }
 .download-button {
   width: fit-content;
-  bottom: 10px;
-  right: 10px;
+  height: 100%;
   background: rgba(0, 0, 0, 0.7);
   color: white;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Pour la transition */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/*Scrooling Wallpapers Component*/
+
+.scroll-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  animation: scroll 150s linear infinite;
+  padding: 60px;
+}
+
+.wallpaper-item {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.wallpaper-item img {
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.scroll-container:hover .scroll-content {
+  animation-play-state: paused;
+}
+
+/* Error Page 404 */
+
+.error-containner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.img-error {
+  max-height: 400px;
+}
+.error-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+.error-info h2 {
+  color: aliceblue;
+  font-size: 2.8em;
+}
+.error-info p {
+  font-size: 1.5em;
+  color: aliceblue;
+}
+.error-info a {
+  font-size: 1.5em;
+  color: #b1ea9e;
 }

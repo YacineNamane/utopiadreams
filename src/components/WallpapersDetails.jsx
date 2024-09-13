@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Mockup from "../assets/UDImages/Mockup.jpg";
 
 const WallpaperPage = () => {
   const { id } = useParams();
@@ -39,8 +40,13 @@ const WallpaperPage = () => {
       <div className="wallpaper-tag">
         <h2>{wallpaper.category}</h2>
       </div>
-      <div className="img-details-container">
-        <img src={wallpaper.src} alt={wallpaper.name} />
+      <div className="mockup-container">
+        <img className="phone-mockup" src={Mockup} alt="Phone Mockup" />
+        <img
+          className="wallpaper-in-mockup"
+          src={wallpaper.src}
+          alt={wallpaper.name}
+        />
       </div>
       <div className="download-button-container">
         <button

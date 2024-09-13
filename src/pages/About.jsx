@@ -1,6 +1,6 @@
-import Header from "../components/Header";
+import DefaultHeader from "../components/DefaultHeader";
 
 function About() {
-  return <Header />;
+  return <DefaultHeader />;
 }
 export default About;

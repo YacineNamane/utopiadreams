@@ -1,6 +1,6 @@
-import Header from "../components/Header";
+import DefaultHeader from "../components/DefaultHeader";
 
 function Contact() {
-  return <Header />;
+  return <DefaultHeader />;
 }
 export default Contact;

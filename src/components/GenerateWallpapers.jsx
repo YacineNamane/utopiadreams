@@ -6,10 +6,9 @@ const GenerateWallpapers = () => {
   const [filteredImages, setFilteredImages] = useState([]);
 
   const [filter, setFilter] = useState("all");
-  const [transitioning, setTransitioning] = useState(false); // État pour gérer la transition
+  const [transitioning, setTransitioning] = useState(false);
   const gridRef = useRef(null);
 
-  // Charger les images depuis le fichier JSON
   useEffect(() => {
     fetch("/images.json")
       .then((response) => response.json())
@@ -20,12 +19,9 @@ const GenerateWallpapers = () => {
       .catch((error) => console.error("Error fetching images:", error));
   }, []);
 
-  // Filtrer les images en fonction de la catégorie
   useEffect(() => {
-    //  transition Fade
     setTransitioning(true);
 
-    // Filtrer les images
     const newFilteredImages =
       filter === "all"
         ? images
@@ -33,17 +29,25 @@ const GenerateWallpapers = () => {
 
     setTimeout(() => {
       setFilteredImages(newFilteredImages);
-      setTransitioning(false); //
+      setTransitioning(false);
     }, 600);
   }, [filter, images]);
 
   return (
     <div className="wallpapers-container">
       <div className="filters">
-        <button onClick={() => setFilter("all")}>All</button>
-        <button onClick={() => setFilter("utopia")}>Utopia</button>
-        <button onClick={() => setFilter("anime")}>Anime</button>
-        <button onClick={() => setFilter("cats")}>Cats</button>
+        <button onClick={() => setFilter("all")}>
+          <span>All</span>
+        </button>
+        <button onClick={() => setFilter("utopia")}>
+          <span>Utopia</span>
+        </button>
+        <button onClick={() => setFilter("anime")}>
+          <span>Anime</span>
+        </button>
+        <button onClick={() => setFilter("cats")}>
+          <span>Cats</span>
+        </button>
       </div>
       <div
         ref={gridRef}
