@@ -38,7 +38,10 @@ const WallpaperPage = () => {
   return (
     <div className="wallpaper-page">
       <div className="wallpaper-tag">
-        <h2>{wallpaper.category}</h2>
+        <h2>
+          Take a look | This is a preview of how your wallpaper will appear on a
+          phone screen
+        </h2>
       </div>
       <div className="mockup-container">
         <img className="phone-mockup" src={Mockup} alt="Phone Mockup" />
@@ -56,6 +59,9 @@ const WallpaperPage = () => {
         >
           Download
         </button>
+      </div>
+      <div className="tag-details-wpp">
+        Tags | <span> {wallpaper.category}</span>
       </div>
     </div>
   );

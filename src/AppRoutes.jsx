@@ -5,6 +5,7 @@ import Artworks from "./pages/Artworks";
 import About from "./pages/About";
 import ArtworkDetails from "./pages/ArtworkDetails";
 import Contact from "./pages/Contact";
+import Contribute from "./pages/Contribute";
 import BugPage from "./pages/BugPage";
 
 const AppRoutes = () => {
@@ -17,6 +18,7 @@ const AppRoutes = () => {
           <Route path="/about" element={<About />} />
           <Route path="/ArtworkDetails/:id" element={<ArtworkDetails />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/Contribute" element={<Contribute />} />
           <Route path="*" element={<BugPage />} />
         </Routes>
       </Router>
