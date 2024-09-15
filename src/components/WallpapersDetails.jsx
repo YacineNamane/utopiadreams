@@ -39,8 +39,8 @@ const WallpaperPage = () => {
     <div className="wallpaper-page">
       <div className="wallpaper-tag">
         <h2>
-          Take a look | This is a preview of how your wallpaper will appear on a
-          phone screen
+          <span>Take a look</span> | This is a preview of how your wallpaper
+          will appear on a phone screen
         </h2>
       </div>
       <div className="mockup-container">

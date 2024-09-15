@@ -12,6 +12,7 @@ function DefaultHeader() {
         <NavLink to="/Artworks">Wallpapers </NavLink>
         <NavLink to="/About">About </NavLink>
         <NavLink to="/Contact">Contact</NavLink>
+        <NavLink to="/Contribute">Contribute</NavLink>
       </div>
     </div>
   );
