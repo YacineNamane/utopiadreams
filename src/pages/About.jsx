@@ -1,6 +1,12 @@
 import DefaultHeader from "../components/DefaultHeader";
+import Footer from "../components/Footer";
 
 function About() {
-  return <DefaultHeader />;
+  return (
+    <div>
+      <DefaultHeader />
+      <Footer />
+    </div>
+  );
 }
 export default About;

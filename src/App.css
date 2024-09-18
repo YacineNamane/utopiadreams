@@ -622,3 +622,123 @@ ul {
   transform: scale(1.1);
   filter: blur(5px);
 }
+
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/UDImages/Footerbg.png");
+  padding-bottom: 145px;
+}
+.footer-ws-info {
+  align-items: center;
+  height: 50%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-logo {
+  background-color: aliceblue;
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./assets/UDImages/UtopiaDreams.png");
+}
+.footer-logo img {
+  width: 100%;
+}
+
+.footer-ws-info p {
+  color: aliceblue;
+  font-size: 1em;
+  font-weight: 100;
+}
+.footer-text {
+  border-top: 2px solid blue;
+}
+.socials-footer {
+  display: flex;
+  background: #f9f9ff;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  height: 10%;
+}
+
+.main-footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  gap: 20px;
+}
+
+.socials-footer-tag img {
+  vertical-align: middle;
+  width: 25px;
+  height: auto;
+}
+.popup-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background: #1d1c3fe0;
+  box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.footer-talk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f9f9ff;
+  width: 50%;
+  height: 100%;
+  gap: 45px;
+}
+.footer-talk h3 {
+  color: #1d1c3fe0;
+  font-size: 5em;
+  font-weight: 300;
+}
+.footer-talk-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  border-bottom: 4px solid;
+}
+.footer-talk p {
+  color: #1d1c3fe0;
+  font-size: 1em;
+  font-weight: 300;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 10px;
+}
+.footer-talk span {
+  color: #1d1c3fe0;
+  font-size: 1em;
+  font-weight: 300;
+}
+.footer-talk-p {
+  height: 30%;
+  padding: 10px;
+}

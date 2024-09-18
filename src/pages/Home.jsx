@@ -3,6 +3,7 @@ import ScrollingWallpapers from "../components/ScrollingWallpapers";
 import Expectations from "../components/Expectations";
 import Niche from "../components/Niche";
 import CategoryIntro from "../components/CategoryIntro";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <ScrollingWallpapers />
       <Niche />
       <CategoryIntro />
+      <Footer />
     </div>
   );
 }

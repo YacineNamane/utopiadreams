@@ -48,6 +48,9 @@ const GenerateWallpapers = () => {
         <button onClick={() => setFilter("cats")}>
           <span>Cats</span>
         </button>
+        <button onClick={() => setFilter("classic")}>
+          <span>Classic</span>
+        </button>
       </div>
       <div
         ref={gridRef}

@@ -18,7 +18,7 @@ const getCategoryFromFilename = (filename) => {
       return "anime";
     case "C":
       return "cats";
-    case "CL":
+    case "L":
       return "classic";
     default:
       return "uncategorized";
