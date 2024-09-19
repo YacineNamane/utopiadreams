@@ -6,12 +6,15 @@ import About from "./pages/About";
 import ArtworkDetails from "./pages/ArtworkDetails";
 import Contact from "./pages/Contact";
 import Contribute from "./pages/Contribute";
+import Rights from "./pages/Rights";
 import BugPage from "./pages/BugPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 const AppRoutes = () => {
   return (
     <React.StrictMode>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/artworks" element={<Artworks />} />
@@ -19,6 +22,7 @@ const AppRoutes = () => {
           <Route path="/ArtworkDetails/:id" element={<ArtworkDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Contribute" element={<Contribute />} />
+          <Route path="/Mentionslégales" element={<Rights />} />
           <Route path="*" element={<BugPage />} />
         </Routes>
       </Router>

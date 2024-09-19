@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
 import insta from "../assets/UDImages/instagram.png";
@@ -51,6 +52,42 @@ function Footer() {
               your mobile screens. <br /> You can reach out to me throw the
               links in the top for your futur projects
             </p>
+          </div>
+        </div>
+      </div>
+      <div className="bottom-footer-container">
+        <div className="rights-footer-container">
+          <div>
+            <NavLink to="/MentionsLégales">Mentions Légales</NavLink>
+          </div>
+          <div>
+            <span>© 2024 UtopiaDreams | All rights reserved.</span>
+          </div>
+        </div>
+        <div className="location-container">
+          <div>
+            {" "}
+            <span>E-mail : utopiadreams.pro@gmail.com</span>
+          </div>
+          <div>
+            <span>Adress : France, île de France</span>
+          </div>
+          <div>
+            <span>Tel : 0636016853</span>
+          </div>
+        </div>
+        <div className="socials-footer-bottom">
+          <div className="socials-footer-tag">
+            <img src={xfooter} alt="" />
+          </div>
+          <div className="socials-footer-tag">
+            <img src={linkdin} alt="" />
+          </div>
+          <div className="socials-footer-tag">
+            <img src={insta} alt="" />
+          </div>
+          <div className="socials-footer-tag">
+            <img src={tiktok} alt="" />
           </div>
         </div>
       </div>
