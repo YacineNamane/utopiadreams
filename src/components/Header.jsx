@@ -21,7 +21,7 @@ function Header() {
           FIND THE ONE THAT FITS YOU THE MOST <br />
           MAKE YOUR SMARTEPHONE'S EXPERIENCE BETTER
         </h2>
-        <NavLink to="/Artworks"> Start Navigation</NavLink>
+        <NavLink to="/Artworks">Start Navigation</NavLink>
       </div>
     </div>
   );

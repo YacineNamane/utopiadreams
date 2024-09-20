@@ -19,16 +19,16 @@ function Footer() {
 
           <div className="socials-footer">
             <div className="socials-footer-tag">
-              <img src={xfooter} alt="" />
+              <img src={xfooter} alt="twitter" />
             </div>
             <div className="socials-footer-tag">
-              <img src={linkdin} alt="" />
+              <img src={linkdin} alt="linkdin" />
             </div>
             <div className="socials-footer-tag">
-              <img src={insta} alt="" />
+              <img src={insta} alt="instagram" />
             </div>
             <div className="socials-footer-tag">
-              <img src={tiktok} alt="" />
+              <img src={tiktok} alt="tiktok" />
             </div>
           </div>
         </div>
@@ -78,16 +78,16 @@ function Footer() {
         </div>
         <div className="socials-footer-bottom">
           <div className="socials-footer-tag">
-            <img src={xfooter} alt="" />
+            <img src={xfooter} alt="twitter" />
           </div>
           <div className="socials-footer-tag">
-            <img src={linkdin} alt="" />
+            <img src={linkdin} alt="linkdin" />
           </div>
           <div className="socials-footer-tag">
-            <img src={insta} alt="" />
+            <img src={insta} alt="instagram" />
           </div>
           <div className="socials-footer-tag">
-            <img src={tiktok} alt="" />
+            <img src={tiktok} alt="tiktok" />
           </div>
         </div>
       </div>

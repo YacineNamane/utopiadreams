@@ -33,13 +33,15 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-
   margin-right: auto;
   margin-left: auto;
+  height: 200px;
 }
 .landing-page-find h2 {
-  font-size: 2.8em;
-  font-weight: bold;
+  font-size: 2.6em;
+  color: #14121e;
+  font-weight: 500;
+  margin: 0;
 }
 .landing-page-find a {
   display: flex;
@@ -48,8 +50,7 @@ body {
   text-decoration: none;
   height: 60px;
   background-color: aliceblue;
-  color: black;
-  font-family: "roboto";
+  color: #14121e;
   font-size: 2em;
   font-weight: bold;
   padding: 25px;
@@ -60,6 +61,7 @@ body {
   background-color: #131516de;
 }
 .logo-ud img {
+  height: 105px;
   max-width: 250px;
 }
 .logo-ud {
@@ -292,6 +294,7 @@ body {
 
 .wallpaper-item img {
   width: 225px;
+  height: 100%;
   margin-right: 20px;
   border-radius: 8px;
 }
@@ -344,7 +347,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: 60vh;
   width: 80%;
   padding-left: 7%;
 }
@@ -457,7 +460,11 @@ ul {
 }
 .paragraph-wrapper-spacial {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 75%;
+  margin: auto;
 }
 .paragraph-wrapper-box {
   display: flex;
@@ -486,7 +493,8 @@ ul {
 .donate-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 55px;
+  padding: 20px;
+  margin: 20px;
   height: 50vh;
 }
 .donate-wrapper p {
@@ -534,6 +542,7 @@ ul {
   display: flex;
   justify-content: space-between;
   height: 50vh;
+  padding-bottom: 50px;
 }
 .donate-img {
   display: flex;
@@ -627,7 +636,7 @@ ul {
 footer {
   display: flex;
   flex-direction: column;
-  height: 96vh;
+  height: 100vh;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -690,6 +699,7 @@ footer {
 .socials-footer-tag img {
   vertical-align: middle;
   width: 25px;
+  height: 24px;
   height: auto;
 }
 .popup-window {
@@ -803,4 +813,152 @@ footer {
   border-bottom: 1px solid;
   padding-bottom: 1px;
   font-weight: 300;
+}
+/* Form contact */
+
+.mecontacter-section {
+  padding: 50px 20px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contact-form h2 {
+  font-size: 2.5rem;
+  color: #333;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/* Style du formulaire */
+.contact-form {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  width: 60%;
+
+  text-align: left;
+  height: 100vh;
+}
+.contact-form form {
+  padding: 40px;
+}
+.contact-illustration {
+  width: 30%;
+  height: 100vh;
+}
+.contact-illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.contact-form form div {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #1d1c3fe0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  color: #1d1c3fe0;
+  font-size: 1em;
+  font-weight: 500;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: border 0.3s ease;
+}
+.contact-form input[type="email"] {
+  width: 70%;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #b1ea9e;
+  outline: none;
+}
+
+/* Bouton d'envoi */
+.contact-form button {
+  background-color: #b1ea9e;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background-color: #90e274;
+}
+
+.message-sent {
+  background-color: #e8f5e9;
+  padding: 20px;
+  color: #388e3c;
+  border: 1px solid #388e3c;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Lien mail */
+.mail-contact {
+  margin-top: 20px;
+}
+
+.mail-contact h3 {
+  font-size: 1.2rem;
+  color: #555;
+  display: flex;
+  justify-content: center;
+}
+
+.mail-contact a {
+  color: #b1ea9e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mail-contact a:hover {
+  text-decoration: underline;
+}
+label span {
+  color: rgb(219, 86, 86);
+}
+.full-name-container {
+  display: flex;
+  gap: 130px;
+}
+.form-Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 25px;
+  gap: 10px;
 }
