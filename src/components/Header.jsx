@@ -4,6 +4,14 @@ import UDLogo from "../assets/UDImages/UtopiaDreams.png";
 function Header() {
   return (
     <div className="landing-page">
+      <style>{`
+        .landing-page-find h2 {
+          font-size: 1.7em;
+  color: #1f1e27;
+  font-weight: 500;
+  margin: 0;
+        }
+      `}</style>
       <div className="Banner">
         <div className="logo-ud">
           <img src={UDLogo} alt="UtopiaDreamsLogo" />

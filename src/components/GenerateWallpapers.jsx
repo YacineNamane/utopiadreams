@@ -58,7 +58,7 @@ const GenerateWallpapers = () => {
       >
         {filteredImages.map((image) => (
           <div key={image.src} className="wallpaper-item">
-            <img src={image.src} alt={image.name} />
+            <img src={image.src} alt={image.name} loading="lazy" />
             <NavLink
               to={`/ArtworkDetails/${image.name}`}
               className="get-button"

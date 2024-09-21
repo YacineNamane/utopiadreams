@@ -1,6 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import ContactIllustration from "../assets/Works/A26.jpg";
+import xfooter from "../assets/UDImages/xfooter.png";
+import tiktok from "../assets/UDImages/tik-tok.png";
+import insta from "../assets/UDImages/instagram.png";
+import linkdin from "../assets/UDImages/linkedin.png";
 
 const ContactForm = () => {
   const form = useRef();
@@ -72,7 +76,7 @@ const ContactForm = () => {
       </div>
       <div className="contact-form">
         <div className="form-header">
-          <h2>Contact Our Team</h2>
+          <h2>Contact | Our Team</h2>
           <span>Reach out and we'll get in touch ASAP</span>
         </div>
         {messageSent ? (
@@ -86,7 +90,7 @@ const ContactForm = () => {
             <label>
               First name
               <input type="text" name="fname" />
-              {errors.name && <span className="error">{errors.fname}</span>}
+              {errors.fname && <span className="error">{errors.fname}</span>}
             </label>
             <label>
               Last name
@@ -133,6 +137,20 @@ const ContactForm = () => {
             You can send an e-mail directly |
             <a href="mailto:utopiadreams.pro@gmail.com"> Here</a>{" "}
           </h3>
+          <div className="socials-footer">
+            <div className="socials-footer-tag">
+              <img src={xfooter} alt="twitter" />
+            </div>
+            <div className="socials-footer-tag">
+              <img src={linkdin} alt="linkdin" />
+            </div>
+            <div className="socials-footer-tag">
+              <img src={insta} alt="instagram" />
+            </div>
+            <div className="socials-footer-tag">
+              <img src={tiktok} alt="tiktok" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

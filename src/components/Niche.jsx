@@ -74,7 +74,7 @@ function Niche() {
               If you like the idea of this website and want to support me for
               the work i put into this project as <span>Web Developper</span>{" "}
               you can simply share this with your friends ! or Donate{" "}
-              <NavLink to={"/Contribute"}>Here</NavLink>
+              <NavLink to={"/Contribute"}>Contribute to this project</NavLink>
             </p>
           </div>
           <div className="support-illustration">

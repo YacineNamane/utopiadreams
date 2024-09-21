@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Mockup from "../assets/UDImages/Mockup.jpg";
+import { NavLink } from "react-router-dom";
 
 const WallpaperPage = () => {
   const { id } = useParams();
@@ -62,6 +63,12 @@ const WallpaperPage = () => {
       </div>
       <div className="tag-details-wpp">
         Tags | <span> {wallpaper.category}</span>
+      </div>
+      <div className="support-details-wpp">
+        <p>If you would like to support me you can |</p>
+        <NavLink to="/Contribute">
+          <span>Donate</span>
+        </NavLink>
       </div>
     </div>
   );

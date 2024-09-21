@@ -4,6 +4,7 @@ import tiktok from "../assets/UDImages/tik-tok.png";
 import insta from "../assets/UDImages/instagram.png";
 import linkdin from "../assets/UDImages/linkedin.png";
 import gh from "../assets/UDImages/github.png";
+import logoUD from "../assets/UDImages/UtopiaDreams.png";
 
 function Footer() {
   return (
@@ -11,7 +12,9 @@ function Footer() {
       <div className="footer-ws-info">
         <div className="popup-window">
           <div className="main-footer-info">
-            <div className="footer-logo"></div>
+            <div className="footer-logo">
+              <img src={logoUD} alt="UtopiaDreams Logo" />
+            </div>
             <div className="footer-text">
               <p>Phone Wallpapers</p>{" "}
             </div>
@@ -19,16 +22,44 @@ function Footer() {
 
           <div className="socials-footer">
             <div className="socials-footer-tag">
-              <img src={xfooter} alt="twitter" />
+              <a
+                href="https://x.com/UtopiaDrea42952"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={xfooter} alt="twitter" />
+              </a>
             </div>
             <div className="socials-footer-tag">
-              <img src={linkdin} alt="linkdin" />
+              <a
+                href="https://www.linkedin.com/in/namane-yacine-542398252/?trk=opento_sprofile_topcard"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={linkdin} alt="linkdin" />
+              </a>
             </div>
             <div className="socials-footer-tag">
-              <img src={insta} alt="instagram" />
+              <a
+                href="https://www.instagram.com/utopiadreamswallpapers/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={insta} alt="instagram" />
+              </a>
             </div>
             <div className="socials-footer-tag">
-              <img src={tiktok} alt="tiktok" />
+              <a
+                href="https://www.tiktok.com/@utopiadreamswallpapers"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={tiktok} alt="tiktok" />{" "}
+              </a>
             </div>
           </div>
         </div>
@@ -39,10 +70,22 @@ function Footer() {
           </div>
           <div className="socials-footer">
             <div className="socials-footer-tag">
-              <img src={linkdin} alt="linkdin logo" />
+              <a
+                href="https://www.linkedin.com/in/namane-yacine-542398252/?trk=opento_sprofile_topcard"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={linkdin} alt="linkdin logo" />
+              </a>
             </div>
             <div className="socials-footer-tag">
-              <img src={gh} alt="linkdin logo" />
+              <a
+                href="https://github.com/YacineNamane"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={gh} alt="linkdin logo" />
+              </a>
             </div>
           </div>
           <div className="footer-talk-p">
@@ -78,16 +121,44 @@ function Footer() {
         </div>
         <div className="socials-footer-bottom">
           <div className="socials-footer-tag">
-            <img src={xfooter} alt="twitter" />
+            <a
+              href="https://x.com/UtopiaDrea42952"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img src={xfooter} alt="twitter" />
+            </a>
           </div>
           <div className="socials-footer-tag">
-            <img src={linkdin} alt="linkdin" />
+            <a
+              href="https://www.linkedin.com/in/namane-yacine-542398252/?trk=opento_sprofile_topcard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img src={linkdin} alt="linkdin" />
+            </a>
           </div>
           <div className="socials-footer-tag">
-            <img src={insta} alt="instagram" />
+            <a
+              href="https://www.instagram.com/utopiadreamswallpapers/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img src={insta} alt="instagram" />
+            </a>
           </div>
           <div className="socials-footer-tag">
-            <img src={tiktok} alt="tiktok" />
+            <a
+              href="https://www.tiktok.com/@utopiadreamswallpapers"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img src={tiktok} alt="tiktok" />{" "}
+            </a>
           </div>
         </div>
       </div>
