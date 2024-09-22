@@ -35,12 +35,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 87%;
   margin-right: auto;
   margin-left: auto;
   height: 200px;
 }
-
+.landing-title-container {
+  display: flex;
+  width: 67%;
+  align-items: center;
+  justify-content: center;
+}
 .landing-page-find a {
   display: flex;
   align-items: center;
@@ -49,7 +54,7 @@ body {
   height: 60px;
   background-color: aliceblue;
   color: #14121e;
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: bold;
   padding: 25px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -260,7 +265,28 @@ body {
   color: #333;
   background-color: #90e274;
 }
-
+.support-details-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  color: aliceblue;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+.socials-wpp-details {
+  display: flex;
+  background: #b1ea9e;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 36%;
+  padding: 5px;
+  border-radius: 4px;
+}
 .tag-details-wpp {
   display: flex;
   justify-content: center;
@@ -426,7 +452,7 @@ body {
 .niche-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 50vh;
   border-top: 1px solid #80808047;
   padding-left: 7%;
 }
@@ -500,16 +526,55 @@ ul {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  width: 75%;
   margin: auto;
+  height: 50vh;
+  border-top: 1px solid #9ddb9d54;
+}
+.paragraph-wrapper-spacial p {
+  color: aliceblue;
+  font-weight: 100;
+  font-size: 1.6em;
+  margin: 0;
+  line-height: 1.3;
+  word-wrap: break-word;
+}
+.paragraph-wrapper-spacial h2 {
+  color: #14121e;
+  font-weight: 600;
+  font-size: 2.8em;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: auto;
+  background-color: #b1ea9e;
+  padding: 5px;
 }
 .paragraph-wrapper-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  flex-direction: column;
 }
-
+.paragraph-wrapper-box a {
+  text-decoration: none;
+  color: rgb(121, 132, 141);
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
+  transition: color 0.4s ease;
+}
+.paragraph-wrapper-box a:hover {
+  color: #b1ea9e;
+}
+.support-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  padding-left: 7%;
+  width: 50%;
+  gap: 30px;
+  padding-bottom: 30px;
+  padding-right: 85px;
+}
 .flex-box-org {
   display: flex;
   justify-content: space-between;
@@ -544,7 +609,7 @@ ul {
 }
 .donate-wrapper h2 {
   text-transform: uppercase;
-  color: aliceblue;
+  color: #333;
   font-weight: 700;
   font-size: 3.2em;
   margin-top: 25px;
@@ -939,8 +1004,8 @@ footer {
 
 /* Bouton d'envoi */
 .contact-form button {
-  background-color: #b1ea9e;
-  color: #fff;
+  background-color: #53d129;
+  color: #333;
   padding: 15px 30px;
   font-size: 1rem;
   border: none;
@@ -949,6 +1014,7 @@ footer {
   transition: background-color 0.3s ease;
   width: 100%;
   font-weight: 600;
+
   text-transform: uppercase;
 }
 
@@ -979,9 +1045,11 @@ footer {
 }
 
 .mail-contact a {
-  color: #b1ea9e;
   text-decoration: none;
   font-weight: 600;
+  color: #3a1995f0;
+  padding: 2px;
+  border-radius: 2px;
 }
 
 .mail-contact a:hover {

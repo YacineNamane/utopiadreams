@@ -6,10 +6,10 @@ function Header() {
     <div className="landing-page">
       <style>{`
         .landing-page-find h2 {
-          font-size: 1.7em;
-  color: #1f1e27;
-  font-weight: 500;
-  margin: 0;
+          font-size: 1.9em;
+    color: #1f1e27;
+    font-weight: bold;
+    margin: 0;
         }
       `}</style>
       <div className="Banner">
@@ -25,11 +25,15 @@ function Header() {
         </div>
       </div>
       <div className="landing-page-find">
-        <h2>
-          FIND THE ONE THAT FITS YOU THE MOST <br />
-          MAKE YOUR SMARTEPHONE'S EXPERIENCE BETTER
-        </h2>
-        <NavLink to="/Artworks">Start Navigation</NavLink>
+        <div className="landing-title-container">
+          <h2>
+            FIND THE ONE THAT FITS YOU THE MOST <br />
+            MAKE YOUR SMARTEPHONE'S EXPERIENCE BETTER
+          </h2>
+        </div>
+        <div>
+          <NavLink to="/Artworks">Start Navigation</NavLink>
+        </div>
       </div>
     </div>
   );

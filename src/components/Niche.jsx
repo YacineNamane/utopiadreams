@@ -68,7 +68,10 @@ function Niche() {
             </ul>
           </div>
         </div>
-        <div className="paragraph-wrapper-spacial">
+      </div>
+      <div className="paragraph-wrapper-spacial">
+        <div className="support-text-container">
+          <h2>Support | Contribute</h2>
           <div className="paragraph-wrapper-box">
             <p>
               If you like the idea of this website and want to support me for
@@ -77,9 +80,9 @@ function Niche() {
               <NavLink to={"/Contribute"}>Contribute to this project</NavLink>
             </p>
           </div>
-          <div className="support-illustration">
-            <img src={Support} alt="support me if you want" />
-          </div>
+        </div>
+        <div className="support-illustration">
+          <img src={Support} alt="support me if you want" />
         </div>
       </div>
     </div>

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Mockup from "../assets/UDImages/Mockup.jpg";
+import xfooter from "../assets/UDImages/xfooter.png";
+import tiktok from "../assets/UDImages/tik-tok.png";
+import insta from "../assets/UDImages/instagram.png";
 import { NavLink } from "react-router-dom";
 
 const WallpaperPage = () => {
@@ -69,6 +72,42 @@ const WallpaperPage = () => {
         <NavLink to="/Contribute">
           <span>Donate</span>
         </NavLink>
+      </div>
+      <div className="support-details-socials">
+        <p>Follow my socials and stay Updated | </p>
+        <div className="socials-wpp-details">
+          <div className="socials-footer-tag">
+            <a
+              href="https://x.com/UtopiaDrea42952"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img src={xfooter} alt="twitter" />
+            </a>
+          </div>
+
+          <div className="socials-footer-tag">
+            <a
+              href="https://www.instagram.com/utopiadreamswallpapers/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img src={insta} alt="instagram" />
+            </a>
+          </div>
+          <div className="socials-footer-tag">
+            <a
+              href="https://www.tiktok.com/@utopiadreamswallpapers"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img src={tiktok} alt="tiktok" />{" "}
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

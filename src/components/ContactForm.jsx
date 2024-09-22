@@ -139,16 +139,44 @@ const ContactForm = () => {
           </h3>
           <div className="socials-footer">
             <div className="socials-footer-tag">
-              <img src={xfooter} alt="twitter" />
+              <a
+                href="https://x.com/UtopiaDrea42952"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={xfooter} alt="twitter" />
+              </a>
             </div>
             <div className="socials-footer-tag">
-              <img src={linkdin} alt="linkdin" />
+              <a
+                href="https://www.linkedin.com/in/namane-yacine-542398252/?trk=opento_sprofile_topcard"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={linkdin} alt="linkdin" />
+              </a>
             </div>
             <div className="socials-footer-tag">
-              <img src={insta} alt="instagram" />
+              <a
+                href="https://www.instagram.com/utopiadreamswallpapers/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={insta} alt="instagram" />
+              </a>
             </div>
             <div className="socials-footer-tag">
-              <img src={tiktok} alt="tiktok" />
+              <a
+                href="https://www.tiktok.com/@utopiadreamswallpapers"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={tiktok} alt="tiktok" />{" "}
+              </a>
             </div>
           </div>
         </div>
