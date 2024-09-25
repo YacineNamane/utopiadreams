@@ -3,7 +3,7 @@ import ContributeImg from "../assets/UDImages/Contribute.png";
 function Donate() {
   return (
     <div className="contribute-container">
-      <div className="donate-wrapper">
+      <div className="donate-wrapper" id="donatetalk">
         <h2>Support the work i put into this</h2>
         <p>
           <span> Support the Project.</span> This project has been an idea I've
@@ -45,7 +45,7 @@ function Donate() {
             />
           </form>
         </div>
-        <div className="donate-img">
+        <div className="donate-img" id="donate">
           {" "}
           <img src={ContributeImg} alt="" />
         </div>

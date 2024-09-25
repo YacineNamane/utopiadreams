@@ -2,7 +2,7 @@ import X from "../assets/UDImages/X.png";
 
 function Expectations() {
   return (
-    <div className="expectations-container">
+    <div className="expectations-container" id="expectation">
       <h2>What to Expect</h2>
       <div className="paragraph-wrapper">
         <p>

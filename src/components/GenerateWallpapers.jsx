@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 
-const GenerateWallpapers = () => {
+const GenerateWallpapers = ({ initialFilter }) => {
   const [images, setImages] = useState([]);
   const [filteredImages, setFilteredImages] = useState([]);
-
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState(initialFilter || "all");
   const [transitioning, setTransitioning] = useState(false);
   const gridRef = useRef(null);
 
@@ -18,6 +17,12 @@ const GenerateWallpapers = () => {
       })
       .catch((error) => console.error("Error fetching images:", error));
   }, []);
+
+  useEffect(() => {
+    if (initialFilter) {
+      setFilter(initialFilter);
+    }
+  }, [initialFilter]);
 
   useEffect(() => {
     setTransitioning(true);

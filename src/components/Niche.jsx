@@ -5,7 +5,7 @@ import Support from "../assets/UDImages/HelpFrenn.png";
 function Niche() {
   return (
     <div>
-      <div className="niche-container">
+      <div className="niche-container" id="niche">
         <h2>My Niche</h2>
         <div className="flex-box-org">
           <div className="paragraph-wrapper-niche">
@@ -69,7 +69,7 @@ function Niche() {
           </div>
         </div>
       </div>
-      <div className="paragraph-wrapper-spacial">
+      <div className="paragraph-wrapper-spacial" id="support">
         <div className="support-text-container">
           <h2>Support | Contribute</h2>
           <div className="paragraph-wrapper-box">

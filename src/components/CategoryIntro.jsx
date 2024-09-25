@@ -5,7 +5,7 @@ import AnimeGif from "../assets/UDImages/Animegif.gif";
 
 function CategoryIntro() {
   return (
-    <div className="category-intro-container">
+    <div className="category-intro-container" id="intro">
       <div className="giphy-container">
         <div className="giphy-item">
           <img src={UtopiaGif} alt="Personal GIF" className="giphy-cover" />
