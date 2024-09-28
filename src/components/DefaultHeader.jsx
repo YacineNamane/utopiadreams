@@ -73,8 +73,8 @@ function DefaultHeader() {
           <NavLink to="/Contact">Contact</NavLink>
           {hoveredMenu === "contact" && (
             <div className="dropdown">
-              <NavLink to="/Contact/#email">Email</NavLink>
-              <NavLink to="/Contact/#phone">Phone</NavLink>
+              <NavLink to="/Contact/#Contact">Reach out</NavLink>
+              <NavLink to="/Contact/#socials">Socials</NavLink>
             </div>
           )}
         </div>

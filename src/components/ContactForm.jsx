@@ -132,7 +132,7 @@ const ContactForm = () => {
             </button>
           </div>
         </form>
-        <div className="mail-contact">
+        <div className="mail-contact" id="socials">
           <h3>
             You can send an e-mail directly |
             <a href="mailto:utopiadreams.pro@gmail.com"> Here</a>{" "}

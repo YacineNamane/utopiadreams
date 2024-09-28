@@ -4,15 +4,15 @@ function Donate() {
   return (
     <div className="contribute-container">
       <div className="donate-wrapper" id="donatetalk">
-        <h2>Support the work i put into this</h2>
+        <h2> If you would like to support </h2>
         <p>
           <span> Support the Project.</span> This project has been an idea I've
-          had for a long time, and now that I'm a freelance web developer, I
-          finally have the skills to bring it to life. I don't make any money
-          from these wallpapers – it's purely a passion project. The only way to
-          support me and help keep this site running is through donations. If
-          you enjoy what I’ve built and want to contribute, I’d really
-          appreciate it!
+          had for a long time, and now that I'm a freelance web developer, AI
+          artist , I finally have the skills to bring it to life. I don't make
+          any money from these wallpapers – it's purely a passion project. The
+          only way to support me and help keep this site running is through
+          donations. If you enjoy what I’ve built and want to contribute, I’d
+          really appreciate it!
         </p>
       </div>
       <div className="donate-section-flex">
