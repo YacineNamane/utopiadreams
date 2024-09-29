@@ -33,12 +33,13 @@ body {
 }
 .landing-page-find {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
-  width: 87%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
   height: 200px;
+  gap: 2%;
 }
 .landing-title-container {
   display: flex;
@@ -253,7 +254,8 @@ body {
 .wallpaper-tag {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-self: center;
+  width: 85%;
 }
 .wallpaper-tag span {
   font-weight: 700;
@@ -509,6 +511,8 @@ body {
   border-top: 1px solid #80808047;
   border-bottom: 1px solid #80808047;
   padding-left: 7%;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .niche-container h2 {
   color: #14121e;
@@ -640,6 +644,7 @@ ul {
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 5px;
+  gap: 40px;
 }
 
 /* Contribute */
@@ -933,7 +938,7 @@ footer {
 }
 .rights-footer-container span {
   color: #1d1c3fe0;
-  font-weight: 300;
+  font-weight: bold;
 }
 .bottom-footer-container {
   display: flex;
@@ -1003,7 +1008,7 @@ footer {
 }
 .contact-form form {
   width: 74%;
-  padding: 40px;
+  padding: 20px;
 }
 .contact-illustration {
   width: 30%;
@@ -1073,12 +1078,20 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 100%;
+  height: 60px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .contact-form button:hover {
   background-color: #90e274;
+}
+.send-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  margin: auto;
 }
 
 .message-sent {
@@ -1092,9 +1105,6 @@ footer {
 }
 
 /* Lien mail */
-.mail-contact {
-  margin-top: 20px;
-}
 
 .mail-contact h3 {
   font-size: 1.2rem;
@@ -1125,9 +1135,14 @@ label span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding: 25px;
+  align-self: flex-start;
+  padding-left: 140px;
+  padding-bottom: 25px;
   gap: 10px;
+}
+.form-header span {
+  font-weight: 500;
+  color: #90e274;
 }
 /* about page */
 .about-main-container {
@@ -1182,10 +1197,14 @@ label span {
   .Banner-default {
     flex-direction: column;
     height: 150px;
+    padding-left: 39px;
+    padding-right: 60px;
   }
+
   .nav-pannel {
     height: 30px;
     padding: 20px;
+    gap: 75px;
   }
   .nav-pannel a {
     font-size: 1.2em;
@@ -1243,8 +1262,128 @@ label span {
   .giphy-item {
     height: 85%;
   }
-}
+  /*footer*/
+  .footer-ws-info {
+    height: 60%;
+    max-width: 554px;
+  }
 
+  footer {
+    height: 60vh;
+  }
+  .footer-logo img {
+    width: 125px;
+  }
+  .footer-talk {
+    gap: 15px;
+  }
+  .footer-talk-title {
+    height: 23%;
+    border-bottom: 2px solid;
+  }
+  .footer-talk-p {
+    height: auto;
+  }
+  .footer-talk h3 {
+    font-size: 3em;
+  }
+  .footer-talk p {
+    font-size: 0.9em;
+  }
+  .footer-logo {
+    height: 20%;
+  }
+
+  .location-container span {
+    font-size: 0.8em;
+  }
+  .rights-footer-container a {
+    font-size: 0.8em;
+  }
+  .rights-footer-container span {
+    font-size: 0.8em;
+  }
+  .socials-footer-tag img {
+    width: 20px;
+  }
+
+  /*contact*/
+  .contact-form {
+    height: 80vh;
+    width: 70%;
+  }
+  .contact-illustration {
+    height: 80vh;
+  }
+  .contact-form h2 {
+    font-size: 1.8em;
+  }
+  .contact-form form {
+    padding: 0px;
+    max-height: 545px;
+  }
+  .contact-form textarea {
+    height: 95px;
+  }
+  .contact-form form div {
+    margin-bottom: 5px;
+  }
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    padding: 6px;
+  }
+  .contact-form label {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  .form-header {
+    align-self: flex-start;
+    padding-left: 70px;
+    padding-bottom: 45px;
+  }
+  .mecontacter-section {
+    height: 80vh;
+    gap: 12px;
+  }
+  .mail-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .mail-contact h3 {
+    font-size: 0.9em;
+  }
+  .mail-contact a {
+    font-weight: 500;
+    padding: 0px;
+  }
+  /*wallpaper details */
+
+  .wallpaper-tag {
+    align-self: center;
+  }
+  .wallpaper-tag h2 {
+    font-size: 1.1em;
+  }
+  /*contribute|support */
+  .donate-wrapper h2 {
+    font-size: 2.2em;
+  }
+  .donate-wrapper p {
+    font-size: 1.8em;
+  }
+  .donate-section-flex {
+    padding-right: 0px;
+  }
+  /*about */
+  .about-main-container h2 {
+    font-size: 2.2em;
+  }
+  .about-main-container p {
+    font-size: 1.6em;
+  }
+}
 /* Responsive for mobile */
 @media (max-width: 767px) {
 }

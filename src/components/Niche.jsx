@@ -12,26 +12,24 @@ function Niche() {
             <p>
               I take pride in creating most of the wallpapers featured on this
               site. Each design is original and crafted with attention to
-              detail.{" "}
-            </p>
-            <p>
-              As the artist, I hold full rights to these creations, ensuring
-              they are unique and authentic.{" "}
+              detail. <br />
+              As the artist, I hold full rights to these creations i made,
+              ensuring they are unique and authentic.
             </p>
             <p>
               By downloading or using any of these wallpapers, you are
               supporting original artwork made with passion .
-              <span>
-                Please note that this website does not sell any wallpapers
-              </span>
             </p>{" "}
           </div>
           <div className="paragraph-wrapper-niche">
             <p>
               Not only but you can find amazing content from other talented
-              creators. We are simply organizing and sharing their works for the
-              enjoyment of others. You can explore and support the creators
-              directly in the following links
+              creators. We are simply organizing and sharing their works .
+              <span>
+                Please note that this website does not sell any wallpapers
+              </span>{" "}
+              . You can explore and support the creators directly in the
+              following links
             </p>
             <ul>
               <li>
