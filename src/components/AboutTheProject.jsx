@@ -1,7 +1,17 @@
+import { useEffect } from "react";
+import AOS from "aos";
 function AboutTheProject() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Durée de l'animation (1 seconde)
+      once: true, // Animation déclenchée une seule fois
+    });
+  }, []);
   return (
     <div className="about-main-container">
-      <h2 id="aboutproject">UtopiaDreams Project</h2>
+      <h2 data-aos="fade-up" id="aboutproject">
+        UtopiaDreams Project
+      </h2>
       <div className="about-the-project">
         <p>
           The idea of creating a dedicated phone wallpaper site{" "}
@@ -21,7 +31,9 @@ function AboutTheProject() {
           unique taste, making their mobile experience even more enjoyable.
         </p>
       </div>
-      <h2 id="aboutme">About Me</h2>
+      <h2 data-aos="fade-up" id="aboutme">
+        About Me
+      </h2>
       <div className="about-me">
         <p>
           As a passionate Web Developer, AI Artist, and Freelance Enthusiast, I

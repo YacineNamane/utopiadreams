@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import AOS from "aos";
 import emailjs from "emailjs-com";
 import ContactIllustration from "../assets/Works/A26.jpg";
 import xfooter from "../assets/UDImages/xfooter.png";
@@ -59,6 +60,12 @@ const ContactForm = () => {
       setErrors(formErrors);
     }
   };
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Durée de l'animation (1 seconde)
+      once: true, // Animation déclenchée une seule fois
+    });
+  }, []);
 
   useEffect(() => {
     if (messageSent) {
@@ -77,7 +84,7 @@ const ContactForm = () => {
       <div className="contact-form">
         <div className="form-header">
           <h2>Contact | Our Team</h2>
-          <span>Reach out and we'll get in touch ASAP</span>
+          <span data-aos="fade-up">Reach out and we'll get in touch ASAP</span>
         </div>
         {messageSent ? (
           <div className={`message-sent`}>
@@ -137,7 +144,7 @@ const ContactForm = () => {
             You can send an e-mail directly |
             <a href="mailto:utopiadreams.pro@gmail.com"> Here</a>{" "}
           </h3>
-          <div className="socials-footer">
+          <div className="socials-footer" data-aos="fade-up">
             <div className="socials-footer-tag">
               <a
                 href="https://x.com/UtopiaDrea42952"

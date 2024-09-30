@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 
+import AOS from "aos";
+
 const GenerateWallpapers = ({ initialFilter }) => {
   const [images, setImages] = useState([]);
   const [filteredImages, setFilteredImages] = useState([]);
@@ -16,6 +18,13 @@ const GenerateWallpapers = ({ initialFilter }) => {
         setFilteredImages(data);
       })
       .catch((error) => console.error("Error fetching images:", error));
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Durée de l'animation (1 seconde)
+      once: true, // Animation déclenchée une seule fois
+    });
   }, []);
 
   useEffect(() => {
@@ -40,7 +49,7 @@ const GenerateWallpapers = ({ initialFilter }) => {
 
   return (
     <div className="wallpapers-container">
-      <div className="filters">
+      <div className="filters" data-aos="fade-up">
         <button onClick={() => setFilter("all")}>
           <span>All</span>
         </button>

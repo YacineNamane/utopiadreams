@@ -1,11 +1,19 @@
 import { NavLink } from "react-router-dom";
 import X from "../assets/UDImages/X.png";
 import Support from "../assets/UDImages/HelpFrenn.png";
+import { useEffect } from "react";
+import AOS from "aos";
 
 function Niche() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Durée de l'animation (1 seconde)
+      once: true, // Animation déclenchée une seule fois
+    });
+  }, []);
   return (
     <div>
-      <div className="niche-container" id="niche">
+      <div className="niche-container" data-aos="fade-up" id="niche">
         <h2>My Niche</h2>
         <div className="flex-box-org">
           <div className="paragraph-wrapper-niche">
@@ -14,11 +22,9 @@ function Niche() {
               site. Each design is original and crafted with attention to
               detail. <br />
               As the artist, I hold full rights to these creations i made,
-              ensuring they are unique and authentic.
-            </p>
-            <p>
-              By downloading or using any of these wallpapers, you are
-              supporting original artwork made with passion .
+              ensuring they are unique and authentic. By downloading or using
+              any of these wallpapers, you are supporting original artwork made
+              with passion .
             </p>{" "}
           </div>
           <div className="paragraph-wrapper-niche">
@@ -79,13 +85,15 @@ function Niche() {
       </div>
       <div className="paragraph-wrapper-spacial" id="support">
         <div className="support-text-container">
-          <h2>Support | Contribute</h2>
+          <h2 data-aos="fade-up">Support | Contribute</h2>
           <div className="paragraph-wrapper-box">
             <p>
               If you like the idea of this website and want to support me for
               the work i put into this project as <span>Web Developper</span>{" "}
               you can simply share this with your friends ! or Donate{" "}
-              <NavLink to={"/Contribute"}>Contribute to this project</NavLink>
+              <NavLink data-aos="fade-up" to={"/Contribute"}>
+                Contribute to this project
+              </NavLink>
             </p>
           </div>
         </div>

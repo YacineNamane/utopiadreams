@@ -1,8 +1,18 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import UDLogo from "../assets/UDImages/UtopiaDreams.png";
 
 function Header() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Durée de l'animation (1 seconde)
+      once: true, // Animation déclenchée une seule fois
+    });
+  }, []);
+
   const [hoveredMenu, setHoveredMenu] = useState(null);
 
   const handleMouseEnter = (menu) => {
@@ -105,13 +115,13 @@ function Header() {
         </div>
       </div>
       <div className="landing-page-find">
-        <div className="landing-title-container">
+        <div className="landing-title-container" data-aos="fade-up">
           <h2>
             FIND THE ONE THAT FITS YOU THE MOST <br />
             MAKE YOUR SMARTEPHONE'S EXPERIENCE BETTER
           </h2>
         </div>
-        <div>
+        <div data-aos="fade-up">
           <NavLink to="/Artworks">Start Navigation</NavLink>
         </div>
       </div>
