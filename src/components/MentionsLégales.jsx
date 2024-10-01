@@ -22,11 +22,11 @@ function MentionsLégales() {
       <div>
         <h3>3. Propriété intellectuelle </h3>{" "}
         <p>
-          Toutes les images et les œuvres publiées sur UtopiaDreams
-          appartiennent à leurs créateurs respectifs, comme mentionné dans les
-          descriptions correspondantes. Aucune des images affichées sur ce site
-          n’est vendue directement. Elles sont organisées et partagées
-          uniquement pour le plaisir des utilisateurs. UtopiaDreams ne
+          Toutes les images et les œuvres publiées "AUTRE QUE les images que
+          j'ai créer" sur UtopiaDreams appartiennent à leurs créateurs
+          respectifs, comme mentionné dans les descriptions correspondantes.
+          Aucune des images affichées sur ce site n’est vendue directement.
+          Elles sont organisées et partagées uniquement. UtopiaDreams ne
           revendique aucune propriété sur les images, mais le design du site,
           les textes et le logo restent la propriété exclusive de l'éditeur.
           Toute reproduction, distribution ou modification des éléments du site

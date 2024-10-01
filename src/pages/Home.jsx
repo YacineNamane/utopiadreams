@@ -6,6 +6,7 @@ import ScrollingWallpapers from "../components/ScrollingWallpapers";
 import Expectations from "../components/Expectations";
 import Niche from "../components/Niche";
 import CategoryIntro from "../components/CategoryIntro";
+import SocialsSection from "../components/SocialsSection";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -26,6 +27,7 @@ function Home() {
       <ScrollingWallpapers />
       <Niche />
       <CategoryIntro />
+      <SocialsSection />
       <Footer />
     </div>
   );

@@ -1,6 +1,7 @@
 import DefaultHeader from "../components/DefaultHeader";
 import WallpapersDetaiils from "../components/WallpapersDetails";
 import ScrollingWallpapers from "../components/ScrollingWallpapers";
+import SocialsSection from "../components/SocialsSection";
 import Footer from "../components/Footer";
 
 function ArtworkDetails() {
@@ -9,6 +10,7 @@ function ArtworkDetails() {
       <DefaultHeader />
       <WallpapersDetaiils />
       <ScrollingWallpapers />
+      <SocialsSection />
       <Footer />
     </div>
   );

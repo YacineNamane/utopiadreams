@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import DefaultHeader from "../components/DefaultHeader";
 import ContactForm from "../components/ContactForm";
+import SocialsSection from "../components/SocialsSection";
 import Footer from "../components/Footer";
 
 function Contact() {
@@ -19,6 +20,7 @@ function Contact() {
     <div>
       <DefaultHeader />
       <ContactForm />
+      <SocialsSection />
       <Footer />;
     </div>
   );

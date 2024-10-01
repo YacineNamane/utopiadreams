@@ -80,6 +80,9 @@ body {
   height: 100px;
 }
 .nav-pannel a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: #333131;
   font-size: 1.4em;
@@ -129,6 +132,12 @@ body {
   border-bottom: 1.5px solid#14121e;
 }
 
+.arrow-icon {
+  margin-left: 5px;
+  transition: transform 0.4s ease;
+  width: 20px;
+  height: 20px;
+}
 /*Wallpapers Page - Filters*/
 
 .wallpapers-container {
@@ -136,6 +145,34 @@ body {
   text-align: center;
   background-color: #14121e;
   position: relative;
+}
+
+.toggle-filters-button img {
+  height: 22px;
+  transition: transform 0.4s ease;
+}
+.filter-button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+.toggle-filters-button {
+  background-color: #14121e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 51px;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+}
+.toggle-filters-button span {
+  font-size: 1.4em;
+  color: aliceblue;
+}
+.rotated {
+  transform: rotate(180deg); /* Rotation de 180° */
 }
 
 .filters {
@@ -1045,7 +1082,7 @@ footer {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2px;
   color: #1d1c3fe0;
   font-size: 1em;
   font-weight: 400;
@@ -1110,13 +1147,18 @@ footer {
 }
 
 .message-sent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #e8f5e9;
-  padding: 20px;
-  color: #388e3c;
-  border: 1px solid #388e3c;
+  padding: 10px;
+  color: #90e274;
   border-radius: 5px;
-  font-size: 1rem;
-  margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 50%;
+  height: 20px;
 }
 
 /* Lien mail */
@@ -1152,8 +1194,8 @@ label span {
   justify-content: center;
   align-self: flex-start;
   padding-left: 140px;
-  padding-bottom: 25px;
-  gap: 10px;
+  padding-bottom: 10px;
+  gap: 6px;
 }
 .form-header span {
   font-weight: 500;
@@ -1182,7 +1224,6 @@ label span {
 .about-the-project {
   display: flex;
   flex-direction: column;
-
   gap: 50px;
 }
 .about-main-container h2 {
@@ -1196,6 +1237,48 @@ label span {
   padding: 5px;
 }
 
+/*Socials dedicated section */
+.socials-section-Upannel {
+  display: flex;
+  background-color: #a379af;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 91%, 0% 20%);
+}
+.socials-footer-Upannel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 48%;
+  gap: 15px;
+}
+.socials-footer-Upannel a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  text-decoration: none;
+  color: #14121e;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.4s ease;
+}
+.socials-footer-Upannel a:hover {
+  color: aliceblue;
+}
+.socials-footer-Upannel-tag img {
+  height: 40px;
+}
+.socials-footer-Upannel-tag {
+  justify-content: flex-start;
+  display: flex;
+}
+.gif-container-socials {
+  width: 50%;
+}
+.gif-container-socials img {
+  width: 100%;
+}
 /*Responsive Design */
 @media (max-width: 1024px) {
   /*landingpage*/
@@ -1257,12 +1340,18 @@ label span {
   .niche-container p {
     font-size: 1.3em;
   }
+  .flex-box-org {
+    height: 65vh;
+  }
   /*contribute */
   .paragraph-wrapper-spacial h2 {
     font-size: 2em;
   }
   .paragraph-wrapper-spacial p {
     font-size: 1.4em;
+  }
+  .paragraph-wrapper-spacial {
+    height: 50vh;
   }
   /* Outro */
   .category-name {
@@ -1276,6 +1365,9 @@ label span {
   }
   .giphy-item {
     height: 85%;
+  }
+  .giphy-container {
+    height: 300px;
   }
   /*footer*/
   .footer-ws-info {
@@ -1397,6 +1489,10 @@ label span {
   }
   .about-main-container p {
     font-size: 1.6em;
+  }
+  /*socials dedicated section */
+  .socials-footer-Upannel a {
+    font-size: 2em;
   }
 }
 /* Responsive for mobile */

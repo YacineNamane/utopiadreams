@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import DefaultHeader from "../components/DefaultHeader";
 import AboutTheProject from "../components/AboutTheProject";
+import SocialsSection from "../components/SocialsSection";
 import Footer from "../components/Footer";
 
 function About() {
@@ -19,6 +20,7 @@ function About() {
     <div>
       <DefaultHeader />
       <AboutTheProject />
+      <SocialsSection />
       <Footer />
     </div>
   );

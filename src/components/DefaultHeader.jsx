@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import UDLogo from "../assets/UDImages/UtopiaDreams.png";
+import arrow from "../assets/UDImages/arrow.png";
 
 function DefaultHeader() {
   const [hoveredMenu, setHoveredMenu] = useState(null);
@@ -24,7 +25,16 @@ function DefaultHeader() {
           onMouseEnter={() => handleMouseEnter("home")}
           onMouseLeave={handleMouseLeave}
         >
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">
+            Home
+            <img
+              src={arrow}
+              alt="arrow"
+              className={`arrow-icon ${
+                hoveredMenu === "home" ? "rotated" : ""
+              }`}
+            />
+          </NavLink>
           {hoveredMenu === "home" && (
             <div className="dropdown">
               <NavLink to="/#expectation">What is it about ?</NavLink>
@@ -40,7 +50,16 @@ function DefaultHeader() {
           onMouseEnter={() => handleMouseEnter("wallpapers")}
           onMouseLeave={handleMouseLeave}
         >
-          <NavLink to="/Artworks">Wallpapers</NavLink>
+          <NavLink to="/Artworks">
+            Wallpapers
+            <img
+              src={arrow}
+              alt="arrow"
+              className={`arrow-icon ${
+                hoveredMenu === "wallpapers" ? "rotated" : ""
+              }`}
+            />
+          </NavLink>
           {hoveredMenu === "wallpapers" && (
             <div className="dropdown">
               <NavLink to="/Artworks?filter=utopia">Utopia</NavLink>
@@ -56,7 +75,16 @@ function DefaultHeader() {
           onMouseEnter={() => handleMouseEnter("about")}
           onMouseLeave={handleMouseLeave}
         >
-          <NavLink to="/About">About</NavLink>
+          <NavLink to="/About">
+            About
+            <img
+              src={arrow}
+              alt="arrow"
+              className={`arrow-icon ${
+                hoveredMenu === "about" ? "rotated" : ""
+              }`}
+            />
+          </NavLink>
           {hoveredMenu === "about" && (
             <div className="dropdown">
               <NavLink to="/About/#aboutproject">Team | UtopiaDream</NavLink>
@@ -70,7 +98,16 @@ function DefaultHeader() {
           onMouseEnter={() => handleMouseEnter("contact")}
           onMouseLeave={handleMouseLeave}
         >
-          <NavLink to="/Contact">Contact</NavLink>
+          <NavLink to="/Contact">
+            Contact
+            <img
+              src={arrow}
+              alt="arrow"
+              className={`arrow-icon ${
+                hoveredMenu === "contact" ? "rotated" : ""
+              }`}
+            />
+          </NavLink>
           {hoveredMenu === "contact" && (
             <div className="dropdown">
               <NavLink to="/Contact/#Contact">Reach out</NavLink>
@@ -84,7 +121,16 @@ function DefaultHeader() {
           onMouseEnter={() => handleMouseEnter("contribute")}
           onMouseLeave={handleMouseLeave}
         >
-          <NavLink to="/Contribute">Contribute</NavLink>
+          <NavLink to="/Contribute">
+            Contribute
+            <img
+              src={arrow}
+              alt="arrow"
+              className={`arrow-icon ${
+                hoveredMenu === "contribute" ? "rotated" : ""
+              }`}
+            />
+          </NavLink>
           {hoveredMenu === "contribute" && (
             <div className="dropdown">
               <NavLink to="/Contribute/#donatetalk">
