@@ -110,13 +110,13 @@ function Footer() {
         <div className="location-container">
           <div>
             {" "}
-            <span>E-mail : utopiadreams.pro@gmail.com</span>
+            <span>utopiadreams.pro@gmail.com</span>
           </div>
           <div>
-            <span>Adress : France, île de France</span>
+            <span>France, île de France</span>
           </div>
           <div>
-            <span>Tel : 0636016853</span>
+            <span>0636016853</span>
           </div>
         </div>
         <div className="socials-footer-bottom">

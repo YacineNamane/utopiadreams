@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
 import Header from "../components/Header";
+import PhoneBanner from "../components/PhoneBanner";
 import ScrollingWallpapers from "../components/ScrollingWallpapers";
 import Expectations from "../components/Expectations";
 import Niche from "../components/Niche";
@@ -22,7 +22,9 @@ function Home() {
   }, [location]);
   return (
     <div>
+      <PhoneBanner />
       <Header />
+
       <Expectations />
       <ScrollingWallpapers />
       <Niche />

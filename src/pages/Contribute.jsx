@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import DefaultHeader from "../components/DefaultHeader";
+import PhoneBanner from "../components/PhoneBanner";
 import Donate from "../components/Donate";
 import SocialsSection from "../components/SocialsSection";
 import Footer from "../components/Footer";
@@ -19,6 +20,7 @@ function Contribute() {
   return (
     <div>
       <DefaultHeader />
+      <PhoneBanner />
       <Donate />
       <SocialsSection />
       <Footer />

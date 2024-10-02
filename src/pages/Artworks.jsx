@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import DefaultHeader from "../components/DefaultHeader";
+import PhoneBanner from "../components/PhoneBanner";
 import GenerateWallpapers from "../components/GenerateWallpapers";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
@@ -21,6 +22,7 @@ function Artworks() {
   return (
     <div>
       <DefaultHeader />
+      <PhoneBanner />
       <GenerateWallpapers initialFilter={filter} />
       <Footer />
     </div>
