@@ -78,7 +78,7 @@ function PhoneBanner() {
         </div>
 
         <div className="nav-section">
-          <NavLink to="/Artworks">
+          <NavLink to="/Contribute">
             <h3>Contribute</h3>
           </NavLink>
           <NavLink to="/Contribute/#donatetalk">Support the project</NavLink>

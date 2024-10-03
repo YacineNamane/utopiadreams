@@ -167,7 +167,7 @@ function Header() {
             MAKE YOUR SMARTEPHONE'S EXPERIENCE BETTER
           </h2>
         </div>
-        <div data-aos="fade-up">
+        <div className="navigate-container-redirect" data-aos="fade-up">
           <NavLink to="/Artworks">Start Navigation</NavLink>
         </div>
       </div>

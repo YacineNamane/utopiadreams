@@ -24,7 +24,6 @@ function Home() {
     <div>
       <PhoneBanner />
       <Header />
-
       <Expectations />
       <ScrollingWallpapers />
       <Niche />

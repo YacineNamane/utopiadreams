@@ -17,7 +17,8 @@ function SocialsSection() {
             rel="noopener noreferrer"
           >
             {" "}
-            <img src={xfooter} alt="twitter" />| Twitter
+            <img src={xfooter} alt="twitter" />
+            <span>| Twitter</span>
           </a>
         </div>
 
@@ -28,7 +29,8 @@ function SocialsSection() {
             rel="noopener noreferrer"
           >
             {" "}
-            <img src={insta} alt="instagram" />| Instagram
+            <img src={insta} alt="instagram" />
+            <span>| Instagram</span>
           </a>
         </div>
         <div className="socials-footer-Upannel-tag">
@@ -38,7 +40,7 @@ function SocialsSection() {
             rel="noopener noreferrer"
           >
             {" "}
-            <img src={tiktok} alt="tiktok" /> | Tiktok
+            <img src={tiktok} alt="tiktok" /> <span>| Tiktok</span>
           </a>
         </div>
       </div>
