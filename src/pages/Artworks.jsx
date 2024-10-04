@@ -1,9 +1,12 @@
+import React, { Suspense, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import DefaultHeader from "../components/DefaultHeader";
-import PhoneBanner from "../components/PhoneBanner";
-import GenerateWallpapers from "../components/GenerateWallpapers";
-import Footer from "../components/Footer";
-import { useEffect, useState } from "react";
+
+const DefaultHeader = React.lazy(() => import("../components/DefaultHeader"));
+const PhoneBanner = React.lazy(() => import("../components/PhoneBanner"));
+const GenerateWallpapers = React.lazy(() =>
+  import("../components/GenerateWallpapers")
+);
+const Footer = React.lazy(() => import("../components/Footer"));
 
 function Artworks() {
   const location = useLocation();
@@ -21,10 +24,12 @@ function Artworks() {
 
   return (
     <div>
-      <DefaultHeader />
-      <PhoneBanner />
-      <GenerateWallpapers initialFilter={filter} />
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <DefaultHeader />
+        <PhoneBanner />
+        <GenerateWallpapers initialFilter={filter} />
+        <Footer />
+      </Suspense>
     </div>
   );
 }

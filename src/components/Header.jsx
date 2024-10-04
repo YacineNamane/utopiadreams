@@ -27,7 +27,7 @@ function Header() {
     <div className="landing-page">
       <style>{`
         .landing-page-find h2 {
-          font-size: 1.9em;
+          font-size: 1.4em;
     color: #1f1e27;
     font-weight: bold;
     margin: 0;

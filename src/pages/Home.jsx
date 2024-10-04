@@ -2,12 +2,17 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import PhoneBanner from "../components/PhoneBanner";
-import ScrollingWallpapers from "../components/ScrollingWallpapers";
-import Expectations from "../components/Expectations";
-import Niche from "../components/Niche";
-import CategoryIntro from "../components/CategoryIntro";
-import SocialsSection from "../components/SocialsSection";
 import Footer from "../components/Footer";
+
+import React, { Suspense } from "react";
+
+const ScrollingWallpapers = React.lazy(() =>
+  import("../components/ScrollingWallpapers")
+);
+const Expectations = React.lazy(() => import("../components/Expectations"));
+const Niche = React.lazy(() => import("../components/Niche"));
+const CategoryIntro = React.lazy(() => import("../components/CategoryIntro"));
+const SocialsSection = React.lazy(() => import("../components/SocialsSection"));
 
 function Home() {
   const location = useLocation();
@@ -20,17 +25,23 @@ function Home() {
       }
     }
   }, [location]);
+
   return (
     <div>
       <PhoneBanner />
       <Header />
-      <Expectations />
-      <ScrollingWallpapers />
-      <Niche />
-      <CategoryIntro />
-      <SocialsSection />
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <Expectations />
+        <ScrollingWallpapers />
+        <Niche />
+        <CategoryIntro />
+        <SocialsSection />
+      </Suspense>
+
       <Footer />
     </div>
   );
 }
+
 export default Home;

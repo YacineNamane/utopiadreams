@@ -1,20 +1,29 @@
-import DefaultHeader from "../components/DefaultHeader";
-import PhoneBanner from "../components/PhoneBanner";
-import WallpapersDetaiils from "../components/WallpapersDetails";
-import ScrollingWallpapers from "../components/ScrollingWallpapers";
-import SocialsSection from "../components/SocialsSection";
-import Footer from "../components/Footer";
+import React, { Suspense } from "react";
+
+const DefaultHeader = React.lazy(() => import("../components/DefaultHeader"));
+const PhoneBanner = React.lazy(() => import("../components/PhoneBanner"));
+const WallpapersDetails = React.lazy(() =>
+  import("../components/WallpapersDetails")
+);
+const ScrollingWallpapers = React.lazy(() =>
+  import("../components/ScrollingWallpapers")
+);
+const SocialsSection = React.lazy(() => import("../components/SocialsSection"));
+const Footer = React.lazy(() => import("../components/Footer"));
 
 function ArtworkDetails() {
   return (
     <div>
-      <DefaultHeader />
-      <PhoneBanner />
-      <WallpapersDetaiils />
-      <ScrollingWallpapers />
-      <SocialsSection />
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <DefaultHeader />
+        <PhoneBanner />
+        <WallpapersDetails />
+        <ScrollingWallpapers />
+        <SocialsSection />
+        <Footer />
+      </Suspense>
     </div>
   );
 }
+
 export default ArtworkDetails;

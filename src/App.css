@@ -21,7 +21,11 @@ body {
 }
 .Banner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 80%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .Banner-default {
   display: flex;
@@ -52,10 +56,10 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  height: 60px;
+  height: 30px;
   background-color: aliceblue;
   color: #14121e;
-  font-size: 1.9em;
+  font-size: 1.4em;
   font-weight: bold;
   padding: 25px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -65,11 +69,14 @@ body {
   background-color: #131516de;
 }
 .logo-ud img {
-  width: 250px;
-  height: auto;
+  width: 200px;
+  height: 82px;
 }
 .logo-ud {
-  height: 100%;
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 100%;
 }
 .nav-pannel {
   display: flex;
@@ -85,7 +92,7 @@ body {
   align-items: center;
   text-decoration: none;
   color: #333131;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 700;
   transition: transform 0.5s ease;
 }
@@ -149,6 +156,7 @@ body {
 
 .toggle-filters-button img {
   height: 22px;
+  width: 22px;
   transition: transform 0.4s ease;
 }
 .filter-button-box {
@@ -338,7 +346,7 @@ body {
   background: #b1ea9e;
   font-size: 1.4em;
   font-weight: 200;
-  color: aliceblue;
+  color: #713c71;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -403,6 +411,7 @@ body {
   text-transform: uppercase;
   padding: 4px;
   background-color: #b1ea9e;
+  color: #713c71;
   border-radius: 4px;
   font-weight: 500;
 }
@@ -420,6 +429,7 @@ body {
 .support-details-wpp span {
   padding: 4px;
   background-color: #b1ea9e;
+  color: #713c71;
   border-radius: 4px;
   font-weight: 500;
   transition: color 0.4s ease, background 0.4s ease;
@@ -607,7 +617,10 @@ ul {
 }
 .niche-container ul {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 7px;
 }
 .niche-container li {
@@ -1199,7 +1212,7 @@ label span {
 }
 .form-header span {
   font-weight: 500;
-  color: #90e274;
+  color: #713c71;
 }
 /* about page */
 .about-main-container {
@@ -1240,8 +1253,10 @@ label span {
 /*Socials dedicated section */
 .socials-section-Upannel {
   display: flex;
+  justify-content: space-between;
   background-color: #a379af;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 85% 100%, 0% 91%, 0% 20%);
+  height: 570px;
 }
 .socials-footer-Upannel {
   display: flex;
@@ -1249,6 +1264,7 @@ label span {
   flex-direction: column;
   align-items: flex-start;
   width: 48%;
+
   gap: 15px;
 }
 .socials-footer-Upannel a {
@@ -1274,7 +1290,8 @@ label span {
   display: flex;
 }
 .gif-container-socials {
-  width: 50%;
+  display: flex;
+  height: auto;
 }
 .gif-container-socials img {
   width: 100%;
@@ -1495,6 +1512,9 @@ label span {
     font-size: 1.6em;
   }
   /*socials dedicated section */
+  .socials-section-Upannel {
+    height: auto;
+  }
   .socials-footer-Upannel a {
     font-size: 2em;
   }
@@ -1514,6 +1534,8 @@ label span {
     position: relative;
   }
   .logo-ud {
+    display: flex;
+    justify-content: flex-start;
     height: auto;
     padding-top: 0px;
   }
@@ -1588,10 +1610,14 @@ label span {
   }
 
   .nav-section a h3 {
-    color: #95c5d5;
+    color: #79a9b9;
+    background: aliceblue;
+    height: 40px;
+    padding: 4px;
     font-weight: bold;
     margin: 0;
     font-size: 1.6em !important;
+    padding-bottom: 12px;
   }
 
   .nav-section a {
@@ -1699,6 +1725,7 @@ label span {
     display: flex;
     flex-direction: column;
     height: 70vh;
+    width: auto;
   }
 
   /*socials dedicated pannel */
@@ -1707,7 +1734,7 @@ label span {
   }
   .socials-footer-Upannel-tag img {
     height: 36px;
-    background: #b3e8b3;
+    background: aliceblue;
     padding: 5px;
   }
   .category-name {
@@ -1784,7 +1811,7 @@ label span {
   }
   /*about */
   .about-main-container h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .about-main-container p {
     font-size: 1.1em;
@@ -1807,9 +1834,13 @@ label span {
     padding: 20px;
   }
   .support-details-wpp {
+    flex-direction: column;
+
     font-size: 1em;
   }
   .support-details-socials {
+    flex-direction: column;
+
     font-size: 1em;
   }
   .tag-details-wpp {
@@ -1850,5 +1881,41 @@ label span {
 @media (min-width: 768px) {
   .phone-banner {
     display: none;
+  }
+}
+@media (max-width: 300px) {
+  .footer-ws-info {
+    display: none;
+  }
+  footer {
+    height: 20vh;
+  }
+  .wallpaper-tag {
+    padding: 2px;
+  }
+  .logo-ud img {
+    width: 100px;
+    height: 50px;
+  }
+  .phone-banner {
+    flex-wrap: wrap;
+  }
+  .donate-section-flex {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: auto;
+  }
+  .donate-img {
+    display: none;
+  }
+  .donate-wrapper {
+    height: auto;
+  }
+  .socials-footer-Upannel-tag img {
+    height: 18px;
+  }
+  .contribute-container {
+    height: auto;
   }
 }
