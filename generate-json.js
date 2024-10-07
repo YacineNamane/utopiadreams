@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const sizeOf = require("image-size"); // Importer le module image-size
 
 const imagesDir = path.join(__dirname, "src", "assets", "Works"); // Répertoire contenant tes images
 const outputFile = path.join(__dirname, "public", "images.json"); // Fichier JSON de sortie
@@ -32,10 +33,13 @@ const getImages = (dir) => {
     .map((file) => {
       const ext = path.extname(file).toLowerCase();
       if ([".jpg", ".jpeg", ".png"].includes(ext)) {
+        const dimensions = sizeOf(path.join(dir, file)); // Obtenir les dimensions de l'image
         return {
           src: `${baseUrl}${file}`, // URL complète pour le JSON
           name: path.basename(file, ext),
           category: getCategoryFromFilename(path.basename(file, ext)),
+          width: dimensions.width, // Largeur de l'image
+          height: dimensions.height, // Hauteur de l'image
         };
       }
     })

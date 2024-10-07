@@ -231,50 +231,31 @@ body {
   grid-column: span 2;
 }
 
-.wallpapers-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.wallpapers-grid.visible {
-  opacity: 1;
-  transform: scale(1);
-}
-
 .wallpaper-item {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 375px;
+  height: 375px; /* Gardez cette propriété pour maintenir une hauteur uniforme */
 }
 
 .wallpaper-item img {
-  width: 100%;
-  height: auto;
+  max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+  max-height: auto; /* Supprimez cette ligne pour éviter de définir une hauteur sur les images */
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: cover; /* Cette propriété est utile pour garder le bon aspect ratio */
   transition: transform 0.3s ease;
-  height: 100%;
+  height: 100%; /* Gardez cette ligne si vous voulez remplir la hauteur */
 }
 
 .wallpaper-item:hover img {
   transform: scale(1.05);
 }
 
-.wallpaper-item:hover .get-button {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .get-button {
   position: absolute;
-  bottom: 4px;
-  right: 19px;
+  bottom: 20px;
+  right: 22px; /* Ajustez selon vos besoins */
   background: rgba(0, 0, 0, 0.7);
   color: #b1ea9e;
   border: none;
@@ -284,6 +265,16 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   transform: translateY(10px);
+}
+
+.wallpaper-item:hover .get-button {
+  opacity: 1;
+  transform: translateY(0); /* Réinitialisez la transformation lors du survol */
+}
+.wallpapers-container img {
+  position: relative;
+  max-width: 200px; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+  max-height: 350px;
 }
 
 /*Wallpapper Détails */

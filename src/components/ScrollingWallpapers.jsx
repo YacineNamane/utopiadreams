@@ -19,10 +19,7 @@ const ScrollingWallpapers = () => {
         {images.concat(images).map((image, index) => (
           <div key={index} className="wallpaper-item">
             <img src={image.src} alt={image.name} loading="lazy" />
-            <NavLink
-              to={`/ArtworkDetails/${image.name}`}
-              className="get-button"
-            >
+            <NavLink to={`/ArtworkDetails/${image.src}`} className="get-button">
               Get this one
             </NavLink>
           </div>
