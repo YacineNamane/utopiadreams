@@ -6,16 +6,15 @@ import Menuicon from "../assets/UDImages/menu.png";
 
 function PhoneBanner() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isClosing, setIsClosing] = useState(false); // Nouvel état pour la rotation
+  const [isClosing, setIsClosing] = useState(false);
 
   const toggleMenu = () => {
     if (isMenuOpen) {
-      // Active l'animation de rotation avant de fermer le menu
       setIsClosing(true);
       setTimeout(() => {
         setIsMenuOpen(false);
-        setIsClosing(false); // Réinitialise l'animation après la fermeture
-      }, 500); // Durée avant de fermer le menu
+        setIsClosing(false);
+      }, 500);
     } else {
       setIsMenuOpen(true);
     }

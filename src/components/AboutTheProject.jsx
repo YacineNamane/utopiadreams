@@ -3,8 +3,8 @@ import AOS from "aos";
 function AboutTheProject() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Durée de l'animation (1 seconde)
-      once: true, // Animation déclenchée une seule fois
+      duration: 1000,
+      once: true,
     });
   }, []);
   return (

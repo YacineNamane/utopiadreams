@@ -42,19 +42,18 @@ const GenerateWallpapers = ({ initialFilter }) => {
     setFilteredImages(newFilteredImages);
   }, [filter, images]);
 
-  // Préparer les images pour la galerie
   const photos = filteredImages.map((image) => ({
     src: image.src,
-    width: 0.2, // Vous pouvez ajuster selon vos besoins
-    height: 0.4, // Vous pouvez ajuster selon vos besoins
+    name: image.name || image.src,
+    width: 0.2,
+    height: 0.4,
   }));
 
-  // Fonction pour rendre chaque image avec un bouton
   const renderImageWithButton = (photo) => {
     return (
-      <div className="wallpaper-item" key={photo.src}>
-        <img src={photo.src} alt={photo.src} />
-        <NavLink to={`/ArtworkDetails/${photo.src}`} className="get-button">
+      <div className="wallpaper-item" key={photo.src} data-aos="fade-up">
+        <img key={photo.src} src={photo.src} alt={photo.src} />
+        <NavLink to={`/ArtworkDetails/${photo.name}`} className="get-button">
           Get this one
         </NavLink>
       </div>
@@ -97,13 +96,12 @@ const GenerateWallpapers = ({ initialFilter }) => {
         </div>
       )}
 
-      {/* Enveloppez la galerie dans un conteneur centré */}
       <div className="wallpapers-grid">
         <Gallery
           style={{
             display: "flex",
             flexWrap: "wrap",
-            justifyContent: "center !important",
+            justifyContent: "center; !important",
           }}
           photos={photos}
           renderImage={({ photo, index }) => renderImageWithButton(photo)}
