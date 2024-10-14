@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  height: 100px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,7 +33,6 @@ body {
   background: linear-gradient(90deg, #f0f8ff, #c6cacd, #a1a0a0);
   padding-left: 43px;
   padding-right: 112px;
-  height: 10vh;
 }
 .landing-page-find {
   display: flex;
@@ -69,8 +68,8 @@ body {
   background-color: #131516de;
 }
 .logo-ud img {
-  width: 200px;
-  height: 82px;
+  width: 235px;
+  height: 185px;
 }
 .logo-ud {
   display: flex;
@@ -84,14 +83,13 @@ body {
   align-items: center;
   gap: 35px;
   padding-top: 3px;
-  height: 100px;
 }
 .nav-pannel a {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #333131;
+  color: aliceblue;
   font-size: 1.3em;
   font-weight: 700;
   transition: transform 0.5s ease;
@@ -333,18 +331,17 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 38px;
+  height: 80px;
 }
 .download-button {
   width: fit-content;
   height: 100%;
-  background: #b1ea9e;
-  font-size: 1.4em;
-  font-weight: 200;
-  color: #713c71;
-  border: none;
+  background: aliceblue;
   padding: 5px 10px;
-  border-radius: 5px;
+  font-size: 2.2em;
+  font-weight: 900;
+  border: solid 4px;
+  color: #713c71;
   cursor: pointer;
   transition: color 0.4s ease, background 0.4s ease, opacity 0.3s ease,
     transform 0.3s ease;
@@ -377,7 +374,6 @@ body {
 .socials-wpp-details a {
   background: aliceblue;
   padding: 3px;
-  border-radius: 4px;
   transition: background 0.4s ease;
 }
 .socials-wpp-details a:hover {
@@ -387,8 +383,8 @@ body {
   transform: scale(1.1);
 }
 .socials-wpp-details img {
-  width: 25px !important;
-  height: 25px !important;
+  width: 20px !important;
+  height: 20px !important;
   transition: transform 0.4s ease;
 }
 .tag-details-wpp {
@@ -404,10 +400,9 @@ body {
 }
 .tag-details-wpp span {
   text-transform: uppercase;
-  padding: 4px;
+  padding: 5px;
   background-color: #b1ea9e;
   color: #713c71;
-  border-radius: 4px;
   font-weight: 500;
 }
 .support-details-wpp {
@@ -422,10 +417,10 @@ body {
   font-size: 1.5em;
 }
 .support-details-wpp span {
-  padding: 4px;
-  background-color: #b1ea9e;
+  padding: 5px;
+  background-color: aliceblue;
   color: #713c71;
-  border-radius: 4px;
+  border: solid 3px;
   font-weight: 500;
   transition: color 0.4s ease, background 0.4s ease;
 }
@@ -875,14 +870,14 @@ footer {
 }
 .footer-logo {
   background-color: aliceblue;
-  height: 28%;
+  height: 35%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .footer-logo img {
   width: 250px;
-  height: auto;
+  height: 115px;
 }
 
 .footer-ws-info p {
@@ -1306,10 +1301,11 @@ label span {
   }
   .Banner {
     flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
   }
   .Banner-default {
     flex-direction: column;
-    height: 150px;
     padding-left: 39px;
     padding-right: 60px;
   }
@@ -1395,6 +1391,7 @@ label span {
   }
   .footer-logo img {
     width: 125px;
+    height: 88px;
   }
   .footer-talk {
     gap: 15px;
@@ -1413,7 +1410,7 @@ label span {
     font-size: 0.9em;
   }
   .footer-logo {
-    height: 20%;
+    height: 35%;
   }
 
   .location-container span {
@@ -1537,9 +1534,7 @@ label span {
     height: auto;
     padding-top: 0px;
   }
-  .logo-ud img {
-    height: 82px;
-  }
+
   .landing-page {
     height: 600px;
   }
@@ -1629,7 +1624,8 @@ label span {
     transition: transform 0.4s ease;
   }
   .logo-ud img {
-    width: 200px;
+    height: 100px;
+    width: 150px;
   }
   .Banner .logo-ud img {
     display: none;
@@ -1728,14 +1724,14 @@ label span {
 
   /* Scrolling element */
   .get-button {
-    bottom: 0px;
+    bottom: 6px;
     right: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 1;
     height: 35px;
-    width: 92%;
+    width: 85%;
     margin-right: 20px;
     color: Black;
     font-weight: bold;
@@ -1789,6 +1785,7 @@ label span {
   }
   .footer-logo img {
     width: 110px;
+    height: 65px;
   }
   .socials-footer-tag img {
     width: 18px;
@@ -1849,8 +1846,7 @@ label span {
     padding: 20px;
   }
   .support-details-wpp {
-    flex-direction: column;
-
+    flex-wrap: wrap;
     font-size: 1em;
   }
   .support-details-socials {

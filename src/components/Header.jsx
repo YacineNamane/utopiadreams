@@ -9,8 +9,8 @@ import arrow from "../assets/UDImages/arrow.png";
 function Header() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Durée de l'animation (1 seconde)
-      once: true, // Animation déclenchée une seule fois
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -28,7 +28,7 @@ function Header() {
       <style>{`
         .landing-page-find h2 {
           font-size: 1.4em;
-    color: #1f1e27;
+    color: aliceblue;
     font-weight: bold;
     margin: 0;
         }

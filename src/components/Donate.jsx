@@ -55,7 +55,7 @@ function Donate() {
         </div>
         <div className="donate-img" id="donate">
           {" "}
-          <img src={ContributeImg} alt="" />
+          <img src={ContributeImg} alt="donnate-img" />
         </div>
       </div>
     </div>

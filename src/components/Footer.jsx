@@ -101,7 +101,7 @@ function Footer() {
       <div className="bottom-footer-container">
         <div className="rights-footer-container">
           <div>
-            <NavLink to="/MentionsLégales">Mentions Légales</NavLink>
+            <NavLink to="/MentionsLégales">Legal notice</NavLink>
           </div>
           <div>
             <span>© 2024 UtopiaDreams | All rights reserved.</span>
@@ -113,10 +113,7 @@ function Footer() {
             <span>utopiadreams.pro@gmail.com</span>
           </div>
           <div>
-            <span>France, île de France</span>
-          </div>
-          <div>
-            <span>0636016853</span>
+            <span>France,Paris</span>
           </div>
         </div>
         <div className="socials-footer-bottom">
