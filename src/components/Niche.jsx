@@ -18,13 +18,16 @@ function Niche() {
         <div className="flex-box-org">
           <div className="paragraph-wrapper-niche">
             <p>
-              I take pride in creating most of the wallpapers featured on this
-              site. Each design is original and crafted with attention to
-              detail. <br />
-              As the artist, I hold full rights to these creations i made,
-              ensuring they are unique and authentic. By downloading or using
-              any of these wallpapers, you are supporting original artwork made
-              with passion .
+              I take pride in reimagining and customizing anime cutscenes into
+              the unique wallpapers featured on this site. Each design is
+              carefully crafted using advanced editing software and AI tools,
+              ensuring originality and attention to detail.{" "}
+            </p>
+            <p>
+              As the artist behind these creations, I hold full rights to the
+              designs, making them both authentic and exclusive. By downloading
+              or using any of these wallpapers, you’re supporting original
+              artwork that blends creativity with technology.
             </p>{" "}
           </div>
           <div className="paragraph-wrapper-niche">
@@ -100,8 +103,9 @@ function Niche() {
           <div className="paragraph-wrapper-box">
             <p>
               If you like the idea of this website and want to support me for
-              the work i put into this project as <span>Web Developper</span>{" "}
-              you can simply share this with your friends ! or Donate{" "}
+              the work i put into this project as{" "}
+              <span>Web Developper | Artist</span> you can simply share this
+              with your friends ! or Donate{" "}
               <NavLink data-aos="fade-up" to={"/Contribute"}>
                 Contribute to this project
               </NavLink>

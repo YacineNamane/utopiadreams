@@ -26,7 +26,7 @@ function Header() {
   return (
     <div className="landing-page">
       <style>{`
-        .landing-page-find h2 {
+        .landing-page-find h1 {
           font-size: 1.4em;
     color: aliceblue;
     font-weight: bold;
@@ -162,10 +162,11 @@ function Header() {
       </div>
       <div className="landing-page-find">
         <div className="landing-title-container" data-aos="fade-up">
-          <h2>
-            FIND THE ONE THAT FITS YOU THE MOST <br />
-            MAKE YOUR SMARTEPHONE'S EXPERIENCE BETTER
-          </h2>
+          <h1>
+            Discover Stunning Anime Wallpapers <br />
+            That Elevate Your Smartphone Experience <br />
+            Anime Theme & More !
+          </h1>
         </div>
         <div className="navigate-container-redirect" data-aos="fade-up">
           <NavLink to="/Artworks">Start Navigation</NavLink>

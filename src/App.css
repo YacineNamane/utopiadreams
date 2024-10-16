@@ -30,9 +30,9 @@ body {
 .Banner-default {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(90deg, #f0f8ff, #c6cacd, #a1a0a0);
   padding-left: 43px;
-  padding-right: 112px;
+  padding-right: 85px;
+  background: linear-gradient(90deg, #511c593b, #6a35bb78);
 }
 .landing-page-find {
   display: flex;
@@ -665,6 +665,10 @@ ul {
   align-items: center;
   flex-direction: column;
 }
+.paragraph-wrapper-box span {
+  color: #be2ebe;
+  font-weight: 400;
+}
 .paragraph-wrapper-box a {
   text-decoration: none;
   color: #14121e;
@@ -876,8 +880,8 @@ footer {
   background-repeat: no-repeat;
 }
 .footer-logo img {
-  width: 250px;
-  height: 115px;
+  width: 217px;
+  height: 122px;
 }
 
 .footer-ws-info p {
@@ -1303,6 +1307,7 @@ label span {
     flex-direction: column;
     justify-content: flex-start;
     gap: 24px;
+    padding-top: 13px;
   }
   .Banner-default {
     flex-direction: column;
@@ -1321,7 +1326,7 @@ label span {
   .dropdown a {
     font-size: 1.05em;
   }
-  .landing-page-find h2 {
+  .landing-page-find h1 {
     font-size: 1.3em !important;
   }
   .landing-page-find a {
@@ -1524,9 +1529,11 @@ label span {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background: linear-gradient(90deg, #f0f8ff, #c6cacd, #a1a0a0);
+    background: linear-gradient(90deg, #511c593b, #6a35bb78);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   .logo-ud {
     display: flex;
@@ -1537,6 +1544,7 @@ label span {
 
   .landing-page {
     height: 600px;
+    padding-top: 120px;
   }
   .landing-title-container {
     height: 50%;
@@ -1547,12 +1555,15 @@ label span {
     justify-content: space-between;
   }
   .menu-toggle img {
-    height: 35px;
+    height: 45px;
     cursor: pointer;
   }
   .menu-toggle {
     background: none;
     border: none;
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
   }
   .nav-pannel.open button {
     background-color: #14121e;
@@ -1625,7 +1636,7 @@ label span {
   }
   .logo-ud img {
     height: 100px;
-    width: 150px;
+    width: 120px;
   }
   .Banner .logo-ud img {
     display: none;
@@ -1645,8 +1656,8 @@ label span {
     display: flex;
     align-items: center;
     width: 95%;
-    height: 147px;
-    gap: 2%;
+    height: 226px;
+    gap: 23%;
   }
   .navigate-container-redirect {
     height: 50%;
@@ -1724,13 +1735,13 @@ label span {
 
   /* Scrolling element */
   .get-button {
-    bottom: 6px;
+    bottom: 20px;
     right: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 1;
-    height: 35px;
+    height: 27px;
     width: 85%;
     margin-right: 20px;
     color: Black;
@@ -1835,12 +1846,16 @@ label span {
   .contact-form {
     width: 100%;
   }
+  .contact-form h2 {
+    font-size: 1.3em;
+  }
   /*Mockup*/
   .mockup-container {
     width: auto;
   }
   .wallpaper-page {
     height: auto;
+    padding-top: 120px;
   }
   .wallpaper-tag {
     padding: 20px;
@@ -1888,6 +1903,16 @@ label span {
   .donate-img {
     align-items: flex-end;
   }
+  .contribute-container {
+    height: 80vh;
+  }
+  .form-donate-container {
+    justify-content: flex-start;
+  }
+  /*filters */
+  .filter-button-box {
+    height: 120px;
+  }
 }
 @media (min-width: 768px) {
   .phone-banner {
@@ -1904,9 +1929,12 @@ label span {
   .wallpaper-tag {
     padding: 2px;
   }
+  .logo-ud {
+    width: 67%;
+  }
   .logo-ud img {
-    width: 100px;
-    height: 50px;
+    width: 118px;
+    height: 85px;
   }
   .phone-banner {
     flex-wrap: wrap;
