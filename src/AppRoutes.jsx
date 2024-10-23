@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Contribute from "./pages/Contribute";
 import Rights from "./pages/Rights";
 import BugPage from "./pages/BugPage";
+import Shop from "./pages/Shop";
 import ScrollToTop from "./components/ScrollToTop";
 
 const AppRoutes = () => {
@@ -23,6 +24,7 @@ const AppRoutes = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/Contribute" element={<Contribute />} />
           <Route path="/Mentionslégales" element={<Rights />} />
+          <Route path="/shop" element={<Shop />} />
           <Route path="*" element={<BugPage />} />
         </Routes>
       </Router>

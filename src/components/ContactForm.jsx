@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import AOS from "aos";
 import emailjs from "emailjs-com";
-import ContactIllustration from "../assets/Works/A26.jpg";
+import ContactIllustration from "../assets/Works/A122.jpg";
 import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
 import insta from "../assets/UDImages/instagram.png";
@@ -83,7 +83,7 @@ const ContactForm = () => {
       </div>
       <div className="contact-form">
         <div className="form-header">
-          <h2>Contact | Our Team</h2>
+          <h2>Contact | Our Team - FEEDBACK</h2>
           <span data-aos="fade-up">Reach out and we'll get in touch ASAP</span>
         </div>
         {messageSent ? (

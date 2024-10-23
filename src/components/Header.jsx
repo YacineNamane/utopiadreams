@@ -158,6 +158,11 @@ function Header() {
               </div>
             )}
           </div>
+          <div className="nav-item">
+            <NavLink id="shopspecial" to="/shop">
+              Shop
+            </NavLink>
+          </div>
         </div>
       </div>
       <div className="landing-page-find">

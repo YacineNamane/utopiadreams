@@ -140,6 +140,11 @@ function DefaultHeader() {
             </div>
           )}
         </div>
+        <div className="nav-item">
+          <NavLink id="shopspecial" to="/shop">
+            Shop
+          </NavLink>
+        </div>
       </div>
     </div>
   );
