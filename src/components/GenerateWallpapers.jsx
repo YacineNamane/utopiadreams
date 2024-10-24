@@ -18,7 +18,7 @@ const GenerateWallpapers = ({ initialFilter }) => {
         setImages(data);
         setFilteredImages(data);
       })
-      .catch((error) => console.error("Error fetching images:", error));
+      .catch((error) => console.error("Error due to fetching images:", error));
   }, []);
 
   useEffect(() => {

@@ -16,7 +16,7 @@ function Footer() {
               <img src={logoUD} alt="UtopiaDreams Logo" />
             </div>
             <div className="footer-text">
-              <p>Phone Wallpapers</p>{" "}
+              <p>Phone-Wallpapers</p>{" "}
             </div>
           </div>
 
