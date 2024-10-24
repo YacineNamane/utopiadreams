@@ -14,9 +14,9 @@ function Expectations() {
       <div className="paragraph-wrapper">
         <p>
           Welcome to <span data-aos="fade-up">UtopiaDreams</span>, Here you will
-          find unique wallpapers from anime cutscenes and other visuals. Each
-          design is carefully Crafted to capture the distinct aesthetic that
-          defines our site .
+          find unique Wallpapers & Designs from anime CutScenes | Shots and
+          other visuals. Each design is carefully Crafted to capture the
+          distinct aesthetic that defines our site .
         </p>
       </div>
       <div className="paragraph-wrapper">

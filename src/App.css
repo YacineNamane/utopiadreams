@@ -936,6 +936,7 @@ footer {
   width: 50%;
   height: 100%;
   gap: 45px;
+  border: 1px solid rgb(121 132 141 / 24%);
 }
 .footer-talk h3 {
   color: #1d1c3fe0;
@@ -1999,8 +2000,8 @@ label span {
     height: 25%;
   }
   .donate-img img {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 252px;
+    max-height: 239px;
   }
   .donate-section-flex {
     width: 80%;
@@ -2062,9 +2063,10 @@ label span {
   }
   .donate-section-flex {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
     width: auto;
+    height: auto;
   }
   .donate-img {
     display: none;

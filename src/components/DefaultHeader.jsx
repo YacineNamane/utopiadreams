@@ -66,6 +66,7 @@ function DefaultHeader() {
               <NavLink to="/Artworks?filter=anime">Anime</NavLink>
               <NavLink to="/Artworks?filter=cats">Cats</NavLink>
               <NavLink to="/Artworks?filter=classic">Classic</NavLink>
+              <NavLink to="/Artworks?filter=realistic">Realistic</NavLink>
             </div>
           )}
         </div>

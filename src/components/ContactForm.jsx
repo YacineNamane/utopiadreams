@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import AOS from "aos";
 import emailjs from "emailjs-com";
-import ContactIllustration from "../assets/Works/A122.jpg";
+import ContactIllustration from "../assets/UDImages/A122.jpg";
 import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
 import insta from "../assets/UDImages/instagram.png";

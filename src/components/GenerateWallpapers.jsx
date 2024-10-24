@@ -51,7 +51,7 @@ const GenerateWallpapers = ({ initialFilter }) => {
 
   const renderImageWithButton = (photo) => {
     return (
-      <div className="wallpaper-item" key={photo.src} data-aos="fade-up">
+      <div className="wallpaper-item" key={photo.name} data-aos="fade-up">
         <img key={photo.src} src={photo.src} alt={photo.src} />
         <NavLink to={`/ArtworkDetails/${photo.name}`} className="get-button">
           Get this one
@@ -83,6 +83,9 @@ const GenerateWallpapers = ({ initialFilter }) => {
           </button>
           <button onClick={() => setFilter("utopia")}>
             <span>Utopia</span>
+          </button>
+          <button onClick={() => setFilter("realistic")}>
+            <span>Realistic</span>
           </button>
           <button onClick={() => setFilter("anime")}>
             <span>Anime</span>

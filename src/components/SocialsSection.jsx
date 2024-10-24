@@ -35,7 +35,7 @@ function SocialsSection() {
         </div>
         <div className="socials-footer-Upannel-tag">
           <a
-            href="https://www.tiktok.com/@utopiadreamswallpapers"
+            href="https://www.tiktok.com/@utopiadreams1"
             target="_blank"
             rel="noopener noreferrer"
           >
