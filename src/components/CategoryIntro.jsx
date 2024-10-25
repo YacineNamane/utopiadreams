@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import CatGif from "../assets/UDImages/catgif.webp";
 import UtopiaGif from "../assets/UDImages/Utopiaagif.webp";
-import AnimeGif from "../assets/UDImages/Animegif.gif";
+import AnimeGif from "../assets/UDImages/Animegif.webp";
+import RealisticGif from "../assets/UDImages/Realisticgif.webp";
 
 function CategoryIntro() {
   return (
@@ -29,6 +30,14 @@ function CategoryIntro() {
           <img src={AnimeGif} alt="Personal GIF" className="giphy-cover" />
           <NavLink to="/Artworks">
             <div className="category-name">Anime</div>
+          </NavLink>
+        </div>
+      </div>
+      <div className="giphy-container  anime">
+        <div className="giphy-item">
+          <img src={RealisticGif} alt="Personal GIF" className="giphy-cover" />
+          <NavLink to="/Artworks">
+            <div className="category-name">Realistic</div>
           </NavLink>
         </div>
       </div>

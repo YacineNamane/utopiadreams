@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import UDLogo from "../assets/UDImages/UtopiaDreams.png";
 import Closeicon from "../assets/UDImages/cross.png";
 import Menuicon from "../assets/UDImages/menu.svg";
-
+import FP from "../assets/UDImages/A25.png";
 function PhoneBanner() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
@@ -24,10 +24,18 @@ function PhoneBanner() {
       <div className="logo-ud">
         <img src={UDLogo} alt="UtopiaDreamsLogo" />
       </div>
-
-      <button className="menu-toggle" onClick={toggleMenu}>
-        <img src={Menuicon} alt="Open Menu" />
-      </button>
+      <div className="fp-menu-container">
+        <div className="fp-container">
+          {" "}
+          <NavLink to="/#Phone-socials">
+            {" "}
+            <img src={FP} alt="profile pic" />
+          </NavLink>
+        </div>
+        <button className="menu-toggle" onClick={toggleMenu}>
+          <img src={Menuicon} alt="Open Menu" />
+        </button>
+      </div>
 
       <div className={`nav-pannel ${isMenuOpen ? "open" : ""}`}>
         {isMenuOpen && (

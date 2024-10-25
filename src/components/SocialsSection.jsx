@@ -6,7 +6,7 @@ import insta from "../assets/UDImages/instagram.png";
 function SocialsSection() {
   return (
     <div className="socials-section-Upannel">
-      <div className="gif-container-socials">
+      <div className="gif-container-socials" id="Phone-socials">
         <img src={SocialsG} alt="Socials redirect" />
       </div>
       <div className="socials-footer-Upannel" data-aos="fade-up">
