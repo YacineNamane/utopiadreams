@@ -4,6 +4,7 @@ import Mockup from "../assets/UDImages/Mockup.jpg";
 import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
 import insta from "../assets/UDImages/instagram.png";
+import Loader from "./Loader";
 import { NavLink } from "react-router-dom";
 
 const WallpaperPage = () => {
@@ -20,7 +21,12 @@ const WallpaperPage = () => {
       .catch((error) => console.error("Error fetching images:", error));
   }, [id]);
 
-  if (!wallpaper) return <div>Loading...</div>;
+  if (!wallpaper)
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
 
   const downloadImage = async (url, name) => {
     try {

@@ -4,22 +4,14 @@ import AOS from "aos";
 import Gallery from "react-photo-gallery";
 import filtersicon from "../assets/UDImages/settings.png";
 import closeicon from "../assets/UDImages/cross.png";
+import Loader from "./Loader"; // Assurez-vous d'avoir un composant Loader pour l'indicateur de chargement
 
 const GenerateWallpapers = ({ initialFilter }) => {
   const [images, setImages] = useState([]);
   const [filteredImages, setFilteredImages] = useState([]);
   const [filter, setFilter] = useState(initialFilter || "all");
   const [showFilters, setShowFilters] = useState(false);
-
-  useEffect(() => {
-    fetch("/images.json")
-      .then((response) => response.json())
-      .then((data) => {
-        setImages(data);
-        setFilteredImages(data);
-      })
-      .catch((error) => console.error("Error due to fetching images:", error));
-  }, []);
+  const [loading, setLoading] = useState(true); // État de chargement
 
   useEffect(() => {
     AOS.init({
@@ -29,17 +21,34 @@ const GenerateWallpapers = ({ initialFilter }) => {
   }, []);
 
   useEffect(() => {
+    setLoading(true); // Activer le chargement lors de la récupération des images
+    fetch("/images.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setImages(data);
+        setFilteredImages(data);
+        setLoading(false); // Désactiver le chargement une fois les images récupérées
+      })
+      .catch((error) => {
+        console.error("Erreur lors de la récupération des images:", error);
+        setLoading(false);
+      });
+  }, []);
+
+  useEffect(() => {
     if (initialFilter) {
       setFilter(initialFilter);
     }
   }, [initialFilter]);
 
   useEffect(() => {
+    setLoading(true);
     const newFilteredImages =
       filter === "all"
         ? images
         : images.filter((image) => image.category === filter);
     setFilteredImages(newFilteredImages);
+    setTimeout(() => setLoading(false), 600);
   }, [filter, images]);
 
   const photos = filteredImages.map((image) => ({
@@ -99,17 +108,21 @@ const GenerateWallpapers = ({ initialFilter }) => {
         </div>
       )}
 
-      <div className="wallpapers-grid">
-        <Gallery
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center; !important",
-          }}
-          photos={photos}
-          renderImage={({ photo, index }) => renderImageWithButton(photo)}
-        />
-      </div>
+      {loading ? (
+        <Loader /> // Afficher le composant de chargement
+      ) : (
+        <div className="wallpapers-grid">
+          <Gallery
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+            }}
+            photos={photos}
+            renderImage={({ photo, index }) => renderImageWithButton(photo)}
+          />
+        </div>
+      )}
     </div>
   );
 };
