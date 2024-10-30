@@ -4,6 +4,7 @@ import DefaultHeader from "../components/DefaultHeader";
 import PhoneBanner from "../components/PhoneBanner";
 import Donate from "../components/Donate";
 import SocialsSection from "../components/SocialsSection";
+import Patreon from "../components/Patreon";
 import Footer from "../components/Footer";
 
 function Contribute() {
@@ -22,6 +23,7 @@ function Contribute() {
       <DefaultHeader />
       <PhoneBanner />
       <Donate />
+      <Patreon />
       <SocialsSection />
       <Footer />
     </div>

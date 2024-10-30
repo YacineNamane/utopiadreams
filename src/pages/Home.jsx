@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import PhoneBanner from "../components/PhoneBanner";
+import Patreon from "../components/Patreon";
 import Footer from "../components/Footer";
 
 import React, { Suspense } from "react";
@@ -35,6 +36,7 @@ function Home() {
         <Expectations />
         <ScrollingWallpapers />
         <Niche />
+        <Patreon />
         <CategoryIntro />
         <SocialsSection />
       </Suspense>

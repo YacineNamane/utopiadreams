@@ -37,7 +37,7 @@ function CategoryIntro() {
         <div className="giphy-item">
           <img src={RealisticGif} alt="Personal GIF" className="giphy-cover" />
           <NavLink to="/Artworks">
-            <div className="category-name">Realistic</div>
+            <div className="category-name">UtopiaDreams</div>
           </NavLink>
         </div>
       </div>

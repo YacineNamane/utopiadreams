@@ -4,14 +4,14 @@ import AOS from "aos";
 import Gallery from "react-photo-gallery";
 import filtersicon from "../assets/UDImages/settings.png";
 import closeicon from "../assets/UDImages/cross.png";
-import Loader from "./Loader"; // Assurez-vous d'avoir un composant Loader pour l'indicateur de chargement
+import Loader from "./Loader";
 
 const GenerateWallpapers = ({ initialFilter }) => {
   const [images, setImages] = useState([]);
   const [filteredImages, setFilteredImages] = useState([]);
   const [filter, setFilter] = useState(initialFilter || "all");
   const [showFilters, setShowFilters] = useState(false);
-  const [loading, setLoading] = useState(true); // État de chargement
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     AOS.init({
@@ -21,13 +21,13 @@ const GenerateWallpapers = ({ initialFilter }) => {
   }, []);
 
   useEffect(() => {
-    setLoading(true); // Activer le chargement lors de la récupération des images
+    setLoading(true);
     fetch("/images.json")
       .then((response) => response.json())
       .then((data) => {
         setImages(data);
         setFilteredImages(data);
-        setLoading(false); // Désactiver le chargement une fois les images récupérées
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Erreur lors de la récupération des images:", error);
@@ -87,29 +87,45 @@ const GenerateWallpapers = ({ initialFilter }) => {
 
       {showFilters && (
         <div className="filters" data-aos="fade-up">
-          <button onClick={() => setFilter("all")}>
+          <button
+            className={`filter-button ${filter === "all" ? "active" : ""}`}
+            onClick={() => setFilter("all")}
+          >
             <span>All</span>
           </button>
-          <button onClick={() => setFilter("utopia")}>
-            <span>Utopia</span>
+          <button id="ud-filter" onClick={() => setFilter("realistic")}>
+            <span>UtopiaDreams</span>
           </button>
-          <button onClick={() => setFilter("realistic")}>
-            <span>Realistic</span>
-          </button>
-          <button onClick={() => setFilter("anime")}>
+          <button
+            className={`filter-button ${filter === "anime" ? "active" : ""}`}
+            onClick={() => setFilter("anime")}
+          >
             <span>Anime</span>
           </button>
-          <button onClick={() => setFilter("cats")}>
+          <button
+            className={`filter-button ${filter === "cats" ? "active" : ""}`}
+            onClick={() => setFilter("cats")}
+          >
             <span>Cats</span>
           </button>
-          <button onClick={() => setFilter("classic")}>
+          <button
+            className={`filter-button ${filter === "utopia" ? "active" : ""}`}
+            onClick={() => setFilter("utopia")}
+          >
+            <span>Utopia</span>
+          </button>
+
+          <button
+            className={`filter-button ${filter === "classic" ? "active" : ""}`}
+            onClick={() => setFilter("classic")}
+          >
             <span>Classic</span>
           </button>
         </div>
       )}
 
       {loading ? (
-        <Loader /> // Afficher le composant de chargement
+        <Loader />
       ) : (
         <div className="wallpapers-grid">
           <Gallery
