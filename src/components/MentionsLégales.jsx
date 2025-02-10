@@ -6,7 +6,7 @@ function MentionsLégales() {
         <h3>1. Site Publisher</h3>
         <p>
           The utopiadreams website is published by : [utopiadreams]
-          <br /> Status : [Freelance Web Developer | Artist] <br />
+          <br /> Status : [Freelance Digital Creator | Web Developer ] <br />
           Adresse : [France, île de france] <br /> Email :
           [utopiadreams.pro@gmail.com]
         </p>

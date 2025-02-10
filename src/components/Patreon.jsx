@@ -9,7 +9,7 @@ const Patreon = () => {
       </div>
       <div className="button-patreon">
         <a
-          href="patreon.com/utopiadreams"
+          href="https://www.patreon.com/utopiadreams"
           target="_blank"
           rel="noopener noreferrer"
         >

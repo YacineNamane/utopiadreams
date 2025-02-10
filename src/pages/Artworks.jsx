@@ -1,12 +1,12 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-
+import Loader from "../components/Loader";
+import FooterAds from "../components/FooterAds";
 const DefaultHeader = React.lazy(() => import("../components/DefaultHeader"));
 const PhoneBanner = React.lazy(() => import("../components/PhoneBanner"));
 const GenerateWallpapers = React.lazy(() =>
   import("../components/GenerateWallpapers")
 );
-const Footer = React.lazy(() => import("../components/Footer"));
 
 function Artworks() {
   const location = useLocation();
@@ -24,11 +24,18 @@ function Artworks() {
 
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div>
+            {" "}
+            <Loader />{" "}
+          </div>
+        }
+      >
         <DefaultHeader />
         <PhoneBanner />
         <GenerateWallpapers initialFilter={filter} />
-        <Footer />
+        <FooterAds />
       </Suspense>
     </div>
   );

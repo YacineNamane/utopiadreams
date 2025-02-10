@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import AOS from "aos";
 import emailjs from "emailjs-com";
-import ContactIllustration from "../assets/UDImages/A122.jpg";
+import ContactIllustration from "../assets/UDImages/A122.png";
 import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
 import insta from "../assets/UDImages/instagram.png";
@@ -79,7 +79,7 @@ const ContactForm = () => {
   return (
     <div className="mecontacter-section" id="Contact">
       <div className="contact-illustration">
-        <img src={ContactIllustration} alt="" />
+        <img src={ContactIllustration} alt="contact illustration" />
       </div>
       <div className="contact-form">
         <div className="form-header">

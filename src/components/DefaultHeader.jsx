@@ -17,7 +17,9 @@ function DefaultHeader() {
   return (
     <div className="Banner-default">
       <div className="logo-ud">
-        <img src={UDLogo} alt="UtopiaDreamsLogo" />
+        <NavLink to="/">
+          <img src={UDLogo} alt="UtopiaDreamsLogo" />
+        </NavLink>
       </div>
       <div className="nav-pannel">
         <div

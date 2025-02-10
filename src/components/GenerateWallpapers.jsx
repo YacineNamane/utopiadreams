@@ -100,7 +100,7 @@ const GenerateWallpapers = ({ initialFilter }) => {
             className={`filter-button ${filter === "anime" ? "active" : ""}`}
             onClick={() => setFilter("anime")}
           >
-            <span>Anime</span>
+            <span>Bluelock</span>
           </button>
           <button
             className={`filter-button ${filter === "cats" ? "active" : ""}`}

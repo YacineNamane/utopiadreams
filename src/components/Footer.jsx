@@ -90,10 +90,13 @@ function Footer() {
           </div>
           <div className="footer-talk-p">
             <p>
-              | Who is behind this project ? <br /> As a dedicated Web Developer
-              & Digital Artist , I've created UtopiaDreams to bring a touch of
-              visual paradise to your mobile screens. <br /> You can reach out
-              to me throw the links in the top for your futur projects
+              Who is behind this | <span>Project</span>? <br /> As a passionate{" "}
+              <span> Digital Creator</span> & Web Developer, I created{" "}
+              <span> UtopiaDreams</span> to bring a "Unique Touch" to your
+              mobile screens. <br />
+              I’m always open to <span>Collaborations</span> feel free to reach
+              out through my <span>Socials</span>!<span> Links </span>are down
+              below.
             </p>
           </div>
         </div>

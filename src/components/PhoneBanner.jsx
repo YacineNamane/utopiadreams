@@ -22,7 +22,9 @@ function PhoneBanner() {
   return (
     <div className="phone-banner">
       <div className="logo-ud">
-        <img src={UDLogo} alt="UtopiaDreamsLogo" />
+        <NavLink to="/">
+          <img src={UDLogo} alt="UtopiaDreamsLogo" />
+        </NavLink>
       </div>
       <div className="fp-menu-container">
         <div className="fp-container">
@@ -67,7 +69,7 @@ function PhoneBanner() {
             <h3>Wallpapers</h3>
           </NavLink>
           <NavLink to="/Artworks?filter=utopia">Utopia</NavLink>
-          <NavLink to="/Artworks?filter=anime">Anime</NavLink>
+          <NavLink to="/Artworks?filter=anime">Bluelock</NavLink>
           <NavLink to="/Artworks?filter=cats">Cats</NavLink>
           <NavLink to="/Artworks?filter=classic">Classic</NavLink>
           <NavLink to="/Artworks?filter=realistic">Realistic</NavLink>

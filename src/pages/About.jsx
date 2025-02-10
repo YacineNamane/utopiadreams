@@ -4,6 +4,7 @@ import DefaultHeader from "../components/DefaultHeader";
 import PhoneBanner from "../components/PhoneBanner";
 import AboutTheProject from "../components/AboutTheProject";
 import SocialsSection from "../components/SocialsSection";
+import FooterAds from "../components/FooterAds";
 import Footer from "../components/Footer";
 
 function About() {
@@ -22,6 +23,7 @@ function About() {
       <DefaultHeader />
       <PhoneBanner />
       <AboutTheProject />
+      <FooterAds />
       <SocialsSection />
       <Footer />
     </div>

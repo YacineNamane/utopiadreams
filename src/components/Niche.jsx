@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import X from "../assets/UDImages/X.png";
 import Support from "../assets/UDImages/HelpFrenn.png";
+import LeftAds from "./LeftAds";
+import RightAds from "./RightAds";
 import { useEffect } from "react";
 import AOS from "aos";
 
@@ -19,31 +21,28 @@ function Niche() {
           <div className="paragraph-wrapper-niche">
             <p>
               I take pride in reimagining and customizing anime cutscenes into
-              the unique wallpapers featured on this site. Each design is
-              carefully crafted using advanced editing software and AI tools,
-              ensuring originality and attention to detail.{" "}
+              the unique wallpapers featured on this site. Each wallpaper is
+              carefully crafted using advanced editing software , ensuring a
+              seamless and high-quality fit for your phone screen.{" "}
             </p>
             <p>
-              As the artist behind these creations, I hold full rights to the
-              designs, making them both authentic and exclusive. By downloading
-              or using any of these wallpapers, you’re supporting original
-              artwork that blends creativity with technology.
+              Please note that the wallpapers are based on scenes from anime,
+              carefully curated and edited to bring out their visual appeal as
+              phone backgrounds. These works are shared for fans to enjoy and
+              celebrate the beauty of anime artistry.
             </p>{" "}
           </div>
           <div className="paragraph-wrapper-niche">
             <p>
-              Not only but you can find amazing content from other talented
-              creators. We are simply organizing and sharing their works .
               <span>
-                Please note that this website does not sell any wallpapers
+                Please note that this website does not sell any wallpapers.
               </span>{" "}
-              . You can explore and support the creators directly in the
-              following links
+              <br />
+              Follow my X account to stay updated and never miss new content!
             </p>
             <ul>
               <li>
                 <img src={X} alt="X logo" />
-
                 <a
                   href="https://x.com/UtopiaDrea42952"
                   target="_blank"
@@ -52,60 +51,20 @@ function Niche() {
                   | UtopiaDreams
                 </a>
               </li>
-              <li>
-                <img src={X} alt="X logo" />
-                <a
-                  href="https://x.com/LiveDigitalArt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  | Digital Art
-                </a>
-              </li>
-              <li>
-                <img src={X} alt="X logo" />
-                <a
-                  href="https://x.com/aestheticsguyy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  | Aesthetics
-                </a>
-              </li>
-              <li>
-                <img src={X} alt="X logo" />
-                <a
-                  href="https://x.com/coffee2hai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  | 2hai
-                </a>
-              </li>
-              <li>
-                <img src={X} alt="X logo" />
-
-                <a
-                  href="https://x.com/ito_ito_18"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  | 絲(いと)AI絵本作家
-                </a>
-              </li>
             </ul>
           </div>
         </div>
       </div>
       <div className="paragraph-wrapper-spacial" id="support">
+        <LeftAds />
         <div className="support-text-container">
           <h2 data-aos="fade-up">Support | Contribute</h2>
           <div className="paragraph-wrapper-box">
             <p>
-              If you like the idea of this website and want to support me for
-              the work i put into this project as{" "}
-              <span>Web Developper | Artist</span> you can simply share this
-              with your friends ! or Donate{" "}
+              If you like the idea of this project and want to support me for
+              the work i put into this as{" "}
+              <span>Digital Creator | Web Developper </span> ! I rely on your
+              donations to keep this project going{" "}
               <NavLink data-aos="fade-up" to={"/Contribute"}>
                 Contribute to this project
               </NavLink>
@@ -115,6 +74,7 @@ function Niche() {
         <div className="support-illustration">
           <img src={Support} alt="support me if you want" />
         </div>
+        <RightAds />
       </div>
     </div>
   );

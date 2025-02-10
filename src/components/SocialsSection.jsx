@@ -1,4 +1,4 @@
-import SocialsG from "../assets/UDImages/socials-gifUD.gif";
+import SocialsG from "../assets/UDImages/socials-gifUD.webp";
 import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
 import insta from "../assets/UDImages/instagram.png";

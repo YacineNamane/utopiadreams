@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import LeftAds from "./LeftAds";
+import RightAds from "./RightAds";
 import Mockup from "../assets/UDImages/Mockup.jpg";
 import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
@@ -53,65 +55,75 @@ const WallpaperPage = () => {
           will appear on a phone screen
         </h2>
       </div>
-      <div className="mockup-container">
-        <img className="phone-mockup" src={Mockup} alt="Phone Mockup" />
-        <img
-          className="wallpaper-in-mockup"
-          src={wallpaper.src}
-          alt={wallpaper.name}
-        />
-      </div>
-      <div className="download-button-container">
-        <button
-          className="download-button"
-          title="Download"
-          onClick={() => downloadImage(wallpaper.src, wallpaper.name)}
-        >
-          Download
-        </button>
-      </div>
-      <div className="tag-details-wpp">
-        Tags | <span> {wallpaper.category}</span>
-      </div>
       <div className="support-details-wpp">
-        <p>If you would like to support me you can |</p>
+        <p>
+          I Rely On your Donations If You would like To Support Me You Can
+          Donate Here{" "}
+        </p>
         <NavLink to="/Contribute">
-          <span>Donate</span>
+          <span>Support The Creator</span>
         </NavLink>
       </div>
-      <div className="support-details-socials">
-        <p>Follow my socials and stay Updated | </p>
-        <div className="socials-wpp-details">
-          <div className="socials-footer-tag">
-            <a
-              href="https://x.com/UtopiaDrea42952"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <img src={xfooter} alt="twitter" />
-            </a>
-          </div>
+      <div className="ads-pannel-wallpaperdl">
+        <LeftAds />
+        <div className="mockup-container">
+          <img className="phone-mockup" src={Mockup} alt="Phone Mockup" />
+          <img
+            className="wallpaper-in-mockup"
+            src={wallpaper.src}
+            alt={wallpaper.name}
+          />
+        </div>
+        <RightAds />
+      </div>
+      <div>
+        <div className="download-button-container">
+          <button
+            className="download-button"
+            title="Download"
+            onClick={() => downloadImage(wallpaper.src, wallpaper.name)}
+          >
+            Download
+          </button>
+        </div>
+        <div className="tag-details-wpp">
+          Tags | <span> {wallpaper.category}</span>
+        </div>
 
-          <div className="socials-footer-tag">
-            <a
-              href="https://www.instagram.com/utopiadreamswallpapers/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <img src={insta} alt="instagram" />
-            </a>
-          </div>
-          <div className="socials-footer-tag">
-            <a
-              href="https://www.tiktok.com/@utopiadreams1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <img src={tiktok} alt="tiktok" />{" "}
-            </a>
+        <div className="support-details-socials">
+          <p>Follow My Socials & Stay Tuned | </p>
+          <div className="socials-wpp-details">
+            <div className="socials-footer-tag">
+              <a
+                href="https://x.com/UtopiaDrea42952"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={xfooter} alt="twitter" />
+              </a>
+            </div>
+
+            <div className="socials-footer-tag">
+              <a
+                href="https://www.instagram.com/utopiadreamswallpapers/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={insta} alt="instagram" />
+              </a>
+            </div>
+            <div className="socials-footer-tag">
+              <a
+                href="https://www.tiktok.com/@utopiadreams1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={tiktok} alt="tiktok" />{" "}
+              </a>
+            </div>
           </div>
         </div>
       </div>

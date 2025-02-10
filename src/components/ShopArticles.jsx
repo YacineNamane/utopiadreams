@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const ShopArticles = () => {
   const [currentImages, setCurrentImages] = useState([0, 0, 0, 0]);
   const [intervals, setIntervals] = useState([null, null, null, null]);
-  const [fading, setFading] = useState([false, false, false, false]); // Pour gérer le fading
+  const [fading, setFading] = useState([false, false, false, false]);
 
   const products = [
     {
@@ -44,11 +44,10 @@ const ShopArticles = () => {
   const handleMouseEnter = (index) => {
     const imageCount = products[index].images.length;
 
-    // Crée un intervalle pour faire défiler les images
     const intervalId = setInterval(() => {
       setFading((prevFading) => {
         const newFading = [...prevFading];
-        newFading[index] = true; // Déclenche le fading
+        newFading[index] = true;
         return newFading;
       });
 
@@ -61,11 +60,11 @@ const ShopArticles = () => {
 
         setFading((prevFading) => {
           const newFading = [...prevFading];
-          newFading[index] = false; // Fin du fading
+          newFading[index] = false;
           return newFading;
         });
-      }, 500); // La durée du fading correspond à la transition CSS
-    }, 1400); // Change d'image toutes les 1,3 secondes
+      }, 500);
+    }, 1400);
 
     const newIntervals = [...intervals];
     newIntervals[index] = intervalId;
@@ -73,7 +72,6 @@ const ShopArticles = () => {
   };
 
   const handleMouseLeave = (index) => {
-    // Réinitialise l'image et supprime l'intervalle
     setCurrentImages((prevImages) => {
       const newImages = [...prevImages];
       newImages[index] = 0;
@@ -86,7 +84,6 @@ const ShopArticles = () => {
     setIntervals(newIntervals);
   };
 
-  // Nettoyage en cas de changement de composant (utile si tu changes de page)
   useEffect(() => {
     return () => {
       intervals.forEach((intervalId) => clearInterval(intervalId));
@@ -126,7 +123,7 @@ const ShopArticles = () => {
               }`}
             />
             <h3>{product.name}</h3>
-            {/* Bulles de pagination */}
+
             <div className="dots-container">
               {product.images.map((_, dotIndex) => (
                 <span

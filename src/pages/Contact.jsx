@@ -4,6 +4,7 @@ import DefaultHeader from "../components/DefaultHeader";
 import PhoneBanner from "../components/PhoneBanner";
 import ContactForm from "../components/ContactForm";
 import SocialsSection from "../components/SocialsSection";
+import FooterAds from "../components/FooterAds";
 import Footer from "../components/Footer";
 
 function Contact() {
@@ -22,6 +23,7 @@ function Contact() {
       <DefaultHeader />
       <PhoneBanner />
       <ContactForm />
+      <FooterAds />
       <SocialsSection />
       <Footer />;
     </div>
