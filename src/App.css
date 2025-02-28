@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-image: url("./assets/UDImages/BackgroundHome.png");
+  background-image: url("./assets/UDImages/BackgroundHome.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -520,6 +520,7 @@ body {
 }
 .img-error {
   max-height: 400px;
+  width: 100%;
 }
 .error-info {
   display: flex;
@@ -633,6 +634,18 @@ ul {
   height: 30px;
   object-fit: cover;
 }
+.paragraph-wrapper a {
+  color: #de33c978;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding-bottom: 1px;
+  transition: color 0.4s ease;
+}
+.paragraph-wrapper a:hover {
+  color: #ffb2ff;
+}
+
 .niche-container a {
   text-decoration: none;
   color: rgb(121, 132, 141);
@@ -742,7 +755,6 @@ ul {
 }
 .paragraph-wrapper-niche {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
   width: 80%;
@@ -1832,6 +1844,10 @@ label span {
   .button-patreon {
     height: 20%;
   }
+  /*Errorpage*/
+  .error-containner {
+    flex-direction: column;
+  }
 }
 /* Responsive for mobile */
 @media (max-width: 767px) {
@@ -2295,6 +2311,10 @@ label span {
   }
   .right-ad {
     display: none;
+  }
+  /*Errorpage*/
+  .error-containner {
+    flex-direction: column;
   }
 }
 @media (min-width: 768px) {

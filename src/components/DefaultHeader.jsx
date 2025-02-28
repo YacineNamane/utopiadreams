@@ -64,11 +64,13 @@ function DefaultHeader() {
           </NavLink>
           {hoveredMenu === "wallpapers" && (
             <div className="dropdown">
-              <NavLink to="/Artworks?filter=utopia">Utopia</NavLink>
-              <NavLink to="/Artworks?filter=anime">Anime</NavLink>
-              <NavLink to="/Artworks?filter=cats">Cats</NavLink>
-              <NavLink to="/Artworks?filter=classic">Classic</NavLink>
-              <NavLink to="/Artworks?filter=realistic">Realistic</NavLink>
+              <NavLink to="/Artworks?filter=utopia">Dandadan</NavLink>
+              <NavLink to="/Artworks?filter=anime">Bluelock</NavLink>
+              <NavLink to="/Artworks?filter=classic">HXH</NavLink>
+              <NavLink to="/Artworks?filter=realistic">One Piece</NavLink>
+              <NavLink to="/Artworks?filter=SL">Solo Leveling</NavLink>
+              <NavLink to="/Artworks?filter=Arcane">Arcane</NavLink>
+              <NavLink to="/Artworks?filter=cats">Others</NavLink>
             </div>
           )}
         </div>

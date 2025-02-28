@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useSearchParams } from "react-router-dom";
 import AOS from "aos";
 import Gallery from "react-photo-gallery";
 import filtersicon from "../assets/UDImages/settings.png";
 import closeicon from "../assets/UDImages/cross.png";
 import Loader from "./Loader";
 
-const GenerateWallpapers = ({ initialFilter }) => {
+const GenerateWallpapers = () => {
   const [images, setImages] = useState([]);
   const [filteredImages, setFilteredImages] = useState([]);
-  const [filter, setFilter] = useState(initialFilter || "all");
   const [showFilters, setShowFilters] = useState(false);
   const [loading, setLoading] = useState(true);
+
+  const [searchParams, setSearchParams] = useSearchParams();
+  const filter = searchParams.get("filter") || "all";
 
   useEffect(() => {
     AOS.init({
@@ -34,12 +36,6 @@ const GenerateWallpapers = ({ initialFilter }) => {
         setLoading(false);
       });
   }, []);
-
-  useEffect(() => {
-    if (initialFilter) {
-      setFilter(initialFilter);
-    }
-  }, [initialFilter]);
 
   useEffect(() => {
     setLoading(true);
@@ -89,37 +85,61 @@ const GenerateWallpapers = ({ initialFilter }) => {
         <div className="filters" data-aos="fade-up">
           <button
             className={`filter-button ${filter === "all" ? "active" : ""}`}
-            onClick={() => setFilter("all")}
+            onClick={() => setSearchParams({ filter: "all" })}
           >
             <span>All</span>
           </button>
-          <button id="ud-filter" onClick={() => setFilter("realistic")}>
-            <span>UtopiaDreams</span>
+          <button
+            className={`filter-button ${
+              filter === "realistic" ? "active" : ""
+            }`}
+            onClick={() => setSearchParams({ filter: "realistic" })}
+          >
+            <span>One Piece</span>
           </button>
           <button
             className={`filter-button ${filter === "anime" ? "active" : ""}`}
-            onClick={() => setFilter("anime")}
+            onClick={() => setSearchParams({ filter: "anime" })}
           >
             <span>Bluelock</span>
           </button>
-          <button
-            className={`filter-button ${filter === "cats" ? "active" : ""}`}
-            onClick={() => setFilter("cats")}
-          >
-            <span>Cats</span>
-          </button>
+
           <button
             className={`filter-button ${filter === "utopia" ? "active" : ""}`}
-            onClick={() => setFilter("utopia")}
+            onClick={() => setSearchParams({ filter: "utopia" })}
           >
-            <span>Utopia</span>
+            <span>Dandadan</span>
           </button>
 
           <button
             className={`filter-button ${filter === "classic" ? "active" : ""}`}
-            onClick={() => setFilter("classic")}
+            onClick={() => setSearchParams({ filter: "classic" })}
           >
-            <span>Classic</span>
+            <span>Hunter x Hunter</span>
+          </button>
+          <button
+            className={`filter-button ${filter === "JJK" ? "active" : ""}`}
+            onClick={() => setSearchParams({ filter: "JJK" })}
+          >
+            <span>Jujutsu Kaisen</span>
+          </button>
+          <button
+            className={`filter-button ${filter === "SL" ? "active" : ""}`}
+            onClick={() => setSearchParams({ filter: "SL" })}
+          >
+            <span>Solo Leveling</span>
+          </button>
+          <button
+            className={`filter-button ${filter === "Arcane" ? "active" : ""}`}
+            onClick={() => setSearchParams({ filter: "Arcane" })}
+          >
+            <span>Arcane | League</span>
+          </button>
+          <button
+            className={`filter-button ${filter === "cats" ? "active" : ""}`}
+            onClick={() => setSearchParams({ filter: "cats" })}
+          >
+            <span>Others</span>
           </button>
         </div>
       )}

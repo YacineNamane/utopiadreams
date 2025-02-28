@@ -95,15 +95,13 @@ const ShopArticles = () => {
       <div className="ud-store-info">
         <h2>UtopiaDreams Shop</h2>
         <p>
-          We’re excited to announce that our shop is in the works, and we’re
+          I'm excited to announce that the shop is in the works, and we’re
           committed to creating something that truly resonates with our
-          community. To make sure we offer what you want to see, we’d love to
-          hear your thoughts ! <br />
+          community. To make sure I offer what you want to see, I’d love to hear
+          your thoughts ! <br />
           What products or designs are you most excited about? <br />
-          What would make your shopping experience with us unforgettable?
-          <br />
           <span> "Your Feedback" </span>will directly shape what’s coming next.
-          Let us know below!
+          Let me know !
         </p>
         <NavLink to={"/Contact"}>GIVE YOUR FEEDBACK</NavLink>
       </div>

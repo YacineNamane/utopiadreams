@@ -68,11 +68,14 @@ function PhoneBanner() {
           <NavLink to="/Artworks">
             <h3>Wallpapers</h3>
           </NavLink>
-          <NavLink to="/Artworks?filter=utopia">Utopia</NavLink>
+          <NavLink to="/Artworks?filter=utopia">Dandadan</NavLink>
           <NavLink to="/Artworks?filter=anime">Bluelock</NavLink>
-          <NavLink to="/Artworks?filter=cats">Cats</NavLink>
-          <NavLink to="/Artworks?filter=classic">Classic</NavLink>
-          <NavLink to="/Artworks?filter=realistic">Realistic</NavLink>
+          <NavLink to="/Artworks?filter=classic">Hunter x Hunter</NavLink>
+          <NavLink to="/Artworks?filter=realistic">One Piece</NavLink>
+          <NavLink to="/Artworks?filter=JJK">Jujutsu Kaisen</NavLink>
+          <NavLink to="/Artworks?filter=SL">Solo Leveling</NavLink>
+          <NavLink to="/Artworks?filter=Arcane">Arcane | League</NavLink>
+          <NavLink to="/Artworks?filter=cats">Others</NavLink>
         </div>
 
         <div className="nav-section">
