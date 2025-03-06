@@ -11,7 +11,7 @@ function CategoryIntro() {
         <div className="giphy-item">
           <img src={UtopiaGif} alt="Personal GIF" className="giphy-cover" />
           <NavLink to="/Artworks">
-            <div className="category-name">Utopia</div>
+            <div className="category-name">hxh</div>
           </NavLink>
         </div>
       </div>
@@ -21,7 +21,7 @@ function CategoryIntro() {
           <img src={CatGif} alt="Personal GIF" className="giphy-cover" />
           <NavLink to="/Artworks">
             {" "}
-            <div className="category-name">Cats</div>
+            <div className="category-name">BLUELOCK</div>
           </NavLink>
         </div>
       </div>
@@ -29,7 +29,7 @@ function CategoryIntro() {
         <div className="giphy-item">
           <img src={AnimeGif} alt="Personal GIF" className="giphy-cover" />
           <NavLink to="/Artworks">
-            <div className="category-name">Anime</div>
+            <div className="category-name">One Piece</div>
           </NavLink>
         </div>
       </div>
@@ -37,7 +37,7 @@ function CategoryIntro() {
         <div className="giphy-item">
           <img src={RealisticGif} alt="Personal GIF" className="giphy-cover" />
           <NavLink to="/Artworks">
-            <div className="category-name">UtopiaDreams</div>
+            <div className="category-name">Others..</div>
           </NavLink>
         </div>
       </div>

@@ -87,7 +87,7 @@ const WallpaperPage = () => {
           </button>
         </div>
         <div className="tag-details-wpp">
-          Tags | <span> {wallpaper.category}</span>
+          Tags | <span> Anime </span>
         </div>
 
         <div className="support-details-socials">
@@ -106,12 +106,12 @@ const WallpaperPage = () => {
 
             <div className="socials-footer-tag">
               <a
-                href="https://www.instagram.com/utopiadreamswallpapers/"
+                href="https://fr.pinterest.com/utopiadreamsDesign/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {" "}
-                <img src={insta} alt="instagram" />
+                <img src={insta} alt="pinterest" />
               </a>
             </div>
             <div className="socials-footer-tag">

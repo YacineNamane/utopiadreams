@@ -24,13 +24,13 @@ function SocialsSection() {
 
         <div className="socials-footer-Upannel-tag">
           <a
-            href="https://www.instagram.com/utopiadreamswallpapers/"
+            href="https://fr.pinterest.com/utopiadreamsDesign/"
             target="_blank"
             rel="noopener noreferrer"
           >
             {" "}
-            <img src={insta} alt="instagram" />
-            <span>| Instagram</span>
+            <img src={insta} alt="pinterest" />
+            <span>| pinterest</span>
           </a>
         </div>
         <div className="socials-footer-Upannel-tag">

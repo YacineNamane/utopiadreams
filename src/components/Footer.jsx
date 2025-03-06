@@ -3,7 +3,6 @@ import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
 import insta from "../assets/UDImages/instagram.png";
 import linkdin from "../assets/UDImages/linkedin.png";
-import gh from "../assets/UDImages/github.png";
 import logoUD from "../assets/UDImages/UtopiaDreams.png";
 
 function Footer() {
@@ -33,22 +32,22 @@ function Footer() {
             </div>
             <div className="socials-footer-tag">
               <a
-                href="https://www.linkedin.com/in/namane-yacine-542398252/?trk=opento_sprofile_topcard"
+                href="https://patreon.com/utopiadreams"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {" "}
-                <img src={linkdin} alt="linkdin" />
+                <img src={linkdin} alt="patreon" />
               </a>
             </div>
             <div className="socials-footer-tag">
               <a
-                href="https://www.instagram.com/utopiadreamswallpapers/"
+                href="https://fr.pinterest.com/utopiadreamsDesign/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {" "}
-                <img src={insta} alt="instagram" />
+                <img src={insta} alt="pinterest" />
               </a>
             </div>
             <div className="socials-footer-tag">
@@ -71,20 +70,20 @@ function Footer() {
           <div className="socials-footer">
             <div className="socials-footer-tag">
               <a
-                href="https://www.linkedin.com/in/namane-yacine-542398252/?trk=opento_sprofile_topcard"
+                href="https://patreon.com/utopiadreams"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={linkdin} alt="linkdin logo" />
+                <img src={linkdin} alt="patreon" />
               </a>
             </div>
             <div className="socials-footer-tag">
               <a
-                href="https://github.com/YacineNamane"
+                href="https://x.com/UtopiaDrea42952"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={gh} alt="linkdin logo" />
+                <img src={xfooter} alt="linkdin logo" />
               </a>
             </div>
           </div>
@@ -107,7 +106,7 @@ function Footer() {
             <NavLink to="/MentionsLégales">Legal notice</NavLink>
           </div>
           <div>
-            <span>© 2024 UtopiaDreams | All rights reserved.</span>
+            <span>© 2025 UtopiaDreams | All rights reserved.</span>
           </div>
         </div>
         <div className="location-container">
@@ -116,7 +115,7 @@ function Footer() {
             <span>utopiadreams.pro@gmail.com</span>
           </div>
           <div>
-            <span>France,Paris</span>
+            <span>France , Paris</span>
           </div>
         </div>
         <div className="socials-footer-bottom">
@@ -142,12 +141,12 @@ function Footer() {
           </div>
           <div className="socials-footer-tag">
             <a
-              href="https://www.instagram.com/utopiadreamswallpapers/"
+              href="https://fr.pinterest.com/utopiadreamsDesign/"
               target="_blank"
               rel="noopener noreferrer"
             >
               {" "}
-              <img src={insta} alt="instagram" />
+              <img src={insta} alt="pinterest" />
             </a>
           </div>
           <div className="socials-footer-tag">
