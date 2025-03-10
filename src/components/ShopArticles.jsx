@@ -16,7 +16,7 @@ const ShopArticles = () => {
       ],
     },
     {
-      name: "Stainless steel water bottle with a straw lid | utopiadreams",
+      name: "Bluelock Poster AnimeEdits - Kaiser | utopiadreams",
       images: [
         require("../assets/UDImages/SS1.png"),
         require("../assets/UDImages/SS2.png"),
@@ -24,7 +24,7 @@ const ShopArticles = () => {
       ],
     },
     {
-      name: "Clear Case for Samsung® | utopiadreams",
+      name: "Clear Case for iPhone® - Isagi | utopiadreams",
       images: [
         require("../assets/UDImages/SM1.png"),
         require("../assets/UDImages/SM2.png"),
@@ -32,7 +32,7 @@ const ShopArticles = () => {
       ],
     },
     {
-      name: "Poster | utopiadreams",
+      name: "Clear Case for Samsung® - SL | utopiadreams",
       images: [
         require("../assets/UDImages/PST1.png"),
         require("../assets/UDImages/PST2.png"),
