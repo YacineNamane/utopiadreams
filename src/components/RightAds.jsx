@@ -1,12 +1,9 @@
-import React from "react";
+import AdComponent from "./AdComponent";
 
 const RightAds = () => {
   return (
     <div className="right-ad">
-      <div className="ad-content">
-        {/* Publicité droite */}
-        <p>Publicité droite</p>
-      </div>
+      <AdComponent adSlot="5678901234" /> {/* Remplace par ton ID de slot */}
     </div>
   );
 };

@@ -1172,7 +1172,6 @@ footer {
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 100vh;
 }
 
 .contact-form h2 {
@@ -1785,7 +1784,6 @@ label span {
     padding-bottom: 45px;
   }
   .mecontacter-section {
-    height: 80vh;
     gap: 12px;
   }
 
