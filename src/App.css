@@ -70,8 +70,8 @@ body {
   background-color: #131516de;
 }
 .logo-ud img {
-  width: 185px;
-  height: 110px;
+  width: 160px;
+  height: 105px;
 }
 .logo-ud {
   display: flex;
@@ -117,7 +117,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  width: auto; /* Ajustement automatique de la largeur */
+  width: auto;
   min-width: max-content;
   z-index: 100;
 }
@@ -481,7 +481,7 @@ body {
 
 .scroll-content {
   display: flex;
-  animation: scroll 35s linear infinite;
+  animation: scroll 45s linear infinite;
   padding: 60px;
 }
 
@@ -506,6 +506,7 @@ body {
     transform: translateX(-50%);
   }
 }
+
 .scroll-container:hover .scroll-content {
   animation-play-state: paused;
 }
@@ -723,7 +724,7 @@ ul {
 }
 .paragraph-wrapper-box a {
   text-decoration: none;
-  color: #14121e;
+  color: #ffb2ff;
   border-bottom: 1px solid;
   padding-bottom: 1px;
   transition: color 0.4s ease;
@@ -2197,11 +2198,25 @@ label span {
     width: 100%;
     height: 85vh;
   }
-  .contact-form h2 {
-    font-size: 1.3em;
+  .form-header {
+    align-items: flex-start;
+    padding-bottom: 25px;
+    padding-left: 13%;
+    margin-left: 0;
+    margin-right: 0;
   }
+  .contact-form h2 {
+    font-size: 0.9em;
+  }
+  .form-header span {
+    font-size: 0.8em;
+  }
+
   .full-name-container {
     flex-direction: column;
+  }
+  .form-header {
+    width: 85%;
   }
   /*Mockup*/
   .mockup-container {

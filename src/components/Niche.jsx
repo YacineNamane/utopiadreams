@@ -66,7 +66,7 @@ function Niche() {
               <span>Digital Creator | Web Developper </span> ! I rely on your
               donations to keep this project going{" "}
               <NavLink data-aos="fade-up" to={"/Contribute"}>
-                Contribute to this project
+                Contribute To This Project
               </NavLink>
             </p>
           </div>

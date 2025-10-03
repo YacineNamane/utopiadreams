@@ -9,11 +9,11 @@ const Patreon = () => {
       </div>
       <div className="button-patreon">
         <a
-          href="https://www.patreon.com/utopiadreams"
+          href="https://buymeacoffee.com/utopiadreams/gallery"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>Visite Patreon</span>
+          <span> Membership </span>
         </a>
       </div>
     </div>

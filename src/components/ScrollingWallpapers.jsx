@@ -1,16 +1,18 @@
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+
+const MAX_IMAGES = 30;
 
 const ScrollingWallpapers = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
     fetch("/images.json")
-      .then((response) => response.json())
+      .then((res) => res.json())
       .then((data) => {
-        setImages(data);
+        setImages(data.slice(0, MAX_IMAGES));
       })
-      .catch((error) => console.error("Error fetching images:", error));
+      .catch((err) => console.error("Error fetching images:", err));
   }, []);
 
   return (
@@ -18,7 +20,12 @@ const ScrollingWallpapers = () => {
       <div className="scroll-content">
         {images.concat(images).map((image, index) => (
           <div key={index} className="wallpaper-item">
-            <img src={image.src} alt={image.name || image.src} loading="lazy" />
+            <img
+              src={image.src}
+              alt={image.name || image.src}
+              loading="lazy"
+              style={{ objectFit: "cover", width: "225px", height: "95%" }}
+            />
             <NavLink
               to={`/ArtworkDetails/${
                 image.name || encodeURIComponent(image.src)

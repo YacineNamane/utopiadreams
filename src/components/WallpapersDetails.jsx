@@ -72,6 +72,7 @@ const WallpaperPage = () => {
             className="wallpaper-in-mockup"
             src={wallpaper.src}
             alt={wallpaper.name}
+            loading="lazy"
           />
         </div>
         <RightAds />
