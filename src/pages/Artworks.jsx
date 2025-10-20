@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Loader from "../components/Loader";
-import FooterAds from "../components/FooterAds";
+
 const DefaultHeader = React.lazy(() => import("../components/DefaultHeader"));
 const PhoneBanner = React.lazy(() => import("../components/PhoneBanner"));
 const GenerateWallpapers = React.lazy(() =>
@@ -35,7 +35,6 @@ function Artworks() {
         <DefaultHeader />
         <PhoneBanner />
         <GenerateWallpapers initialFilter={filter} />
-        <FooterAds />
       </Suspense>
     </div>
   );

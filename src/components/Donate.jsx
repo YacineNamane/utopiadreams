@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
-import ContritubeG from "../assets/UDImages/Contribute.gif";
+import ContritubeG from "../assets/UDImages/Contribute-txt.webp";
 import ContributeImg from "../assets/UDImages/Contribute.webp";
 function Donate() {
   useEffect(() => {

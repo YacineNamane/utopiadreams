@@ -91,29 +91,38 @@ const GenerateWallpapers = () => {
           </button>
           <button
             className={`filter-button ${
-              filter === "realistic" ? "active" : ""
+              filter === "One Piece" ? "active" : ""
             }`}
-            onClick={() => setSearchParams({ filter: "realistic" })}
+            onClick={() => setSearchParams({ filter: "One Piece" })}
           >
             <span>One Piece</span>
           </button>
           <button
-            className={`filter-button ${filter === "anime" ? "active" : ""}`}
-            onClick={() => setSearchParams({ filter: "anime" })}
+            className={`filter-button ${filter === "Bluelock" ? "active" : ""}`}
+            onClick={() => setSearchParams({ filter: "Bluelock" })}
           >
             <span>Bluelock</span>
           </button>
 
           <button
-            className={`filter-button ${filter === "utopia" ? "active" : ""}`}
-            onClick={() => setSearchParams({ filter: "utopia" })}
+            className={`filter-button ${
+              filter === "DemonSlayer" ? "active" : ""
+            }`}
+            onClick={() => setSearchParams({ filter: "DemonSlayer" })}
+          >
+            <span>Demon Slayer</span>
+          </button>
+
+          <button
+            className={`filter-button ${filter === "Dandadan" ? "active" : ""}`}
+            onClick={() => setSearchParams({ filter: "Dandadan" })}
           >
             <span>Dandadan</span>
           </button>
 
           <button
-            className={`filter-button ${filter === "classic" ? "active" : ""}`}
-            onClick={() => setSearchParams({ filter: "classic" })}
+            className={`filter-button ${filter === "HxH" ? "active" : ""}`}
+            onClick={() => setSearchParams({ filter: "HxH" })}
           >
             <span>Hunter x Hunter</span>
           </button>
@@ -124,8 +133,10 @@ const GenerateWallpapers = () => {
             <span>Jujutsu Kaisen</span>
           </button>
           <button
-            className={`filter-button ${filter === "SL" ? "active" : ""}`}
-            onClick={() => setSearchParams({ filter: "SL" })}
+            className={`filter-button ${
+              filter === "Solo Leveling" ? "active" : ""
+            }`}
+            onClick={() => setSearchParams({ filter: "Solo Leveling" })}
           >
             <span>Solo Leveling</span>
           </button>
@@ -136,8 +147,8 @@ const GenerateWallpapers = () => {
             <span>Arcane | League</span>
           </button>
           <button
-            className={`filter-button ${filter === "cats" ? "active" : ""}`}
-            onClick={() => setSearchParams({ filter: "cats" })}
+            className={`filter-button ${filter === "Variety" ? "active" : ""}`}
+            onClick={() => setSearchParams({ filter: "Variety" })}
           >
             <span>Others</span>
           </button>

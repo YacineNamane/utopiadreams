@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import LeftAds from "./LeftAds";
-import RightAds from "./RightAds";
 import Mockup from "../assets/UDImages/Mockup.jpg";
 import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
@@ -65,7 +63,6 @@ const WallpaperPage = () => {
         </NavLink>
       </div>
       <div className="ads-pannel-wallpaperdl">
-        <LeftAds />
         <div className="mockup-container">
           <img className="phone-mockup" src={Mockup} alt="Phone Mockup" />
           <img
@@ -75,7 +72,6 @@ const WallpaperPage = () => {
             loading="lazy"
           />
         </div>
-        <RightAds />
       </div>
       <div>
         <div className="download-button-container">
@@ -88,7 +84,7 @@ const WallpaperPage = () => {
           </button>
         </div>
         <div className="tag-details-wpp">
-          Tags | <span> Anime </span>
+          Tags | <span> {wallpaper.category}</span>
         </div>
 
         <div className="support-details-socials">

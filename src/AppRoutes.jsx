@@ -10,11 +10,13 @@ import Rights from "./pages/Rights";
 import BugPage from "./pages/BugPage";
 import Shop from "./pages/Shop";
 import ScrollToTop from "./components/ScrollToTop";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const AppRoutes = () => {
   return (
     <React.StrictMode>
       <Router>
+        <GoogleAnalytics trackingId="G-3P7H77ZWM0" />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />

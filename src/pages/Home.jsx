@@ -4,7 +4,6 @@ import Header from "../components/Header";
 import PhoneBanner from "../components/PhoneBanner";
 import Requests from "../components/Requests";
 import Patreon from "../components/Patreon";
-import FooterAds from "../components/FooterAds";
 import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 import React, { Suspense } from "react";
@@ -45,10 +44,8 @@ function Home() {
         <ScrollingWallpapers />
         <Requests />
         <Niche />
-        <FooterAds />
         <Patreon />
         <CategoryIntro />
-        <FooterAds />
         <SocialsSection />
       </Suspense>
 

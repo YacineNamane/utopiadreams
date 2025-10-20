@@ -1,8 +1,7 @@
 import { NavLink } from "react-router-dom";
 import X from "../assets/UDImages/X.png";
 import Support from "../assets/UDImages/HelpFrenn.png";
-import LeftAds from "./LeftAds";
-import RightAds from "./RightAds";
+
 import { useEffect } from "react";
 import AOS from "aos";
 
@@ -56,7 +55,6 @@ function Niche() {
         </div>
       </div>
       <div className="paragraph-wrapper-spacial" id="support">
-        <LeftAds />
         <div className="support-text-container">
           <h2 data-aos="fade-up">Support | Contribute</h2>
           <div className="paragraph-wrapper-box">
@@ -74,7 +72,6 @@ function Niche() {
         <div className="support-illustration">
           <img src={Support} alt="support me if you want" />
         </div>
-        <RightAds />
       </div>
     </div>
   );

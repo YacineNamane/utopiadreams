@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import Loader from "../components/Loader";
-import FooterAds from "../components/FooterAds";
 
 const DefaultHeader = React.lazy(() => import("../components/DefaultHeader"));
 const PhoneBanner = React.lazy(() => import("../components/PhoneBanner"));
@@ -28,7 +27,6 @@ function ArtworkDetails() {
         <PhoneBanner />
         <WallpapersDetails />
         <ScrollingWallpapers />
-        <FooterAds />
         <SocialsSection />
         <Footer />
       </Suspense>

@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import AOS from "aos";
 import emailjs from "emailjs-com";
-import ContactIllustration from "../assets/UDImages/A122.png";
+import ContactIllustration from "../assets/UDImages/A122.webp";
 import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
 import insta from "../assets/UDImages/instagram.png";
@@ -142,7 +142,7 @@ const ContactForm = () => {
         <div className="mail-contact" id="socials">
           <h3>
             You can send an e-mail directly |
-            <a href="mailto:utopiadreams.pro@gmail.com"> Here</a>{" "}
+            <a href="mailto:utopiadreams.pro@gmail.com"> Here </a>{" "}
           </h3>
           <div className="socials-footer" data-aos="fade-up">
             <div className="socials-footer-tag">
