@@ -32,7 +32,7 @@ function Footer() {
             </div>
             <div className="socials-footer-tag">
               <a
-                href="https://patreon.com/utopiadreams"
+                href="https://buymeacoffee.com/utopiadreams/gallery"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -70,7 +70,7 @@ function Footer() {
           <div className="socials-footer">
             <div className="socials-footer-tag">
               <a
-                href="https://patreon.com/utopiadreams"
+                href="https://buymeacoffee.com/utopiadreams/gallery"
                 target="_blank"
                 rel="noopener noreferrer"
               >

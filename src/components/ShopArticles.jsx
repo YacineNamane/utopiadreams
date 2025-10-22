@@ -16,27 +16,11 @@ const ShopArticles = () => {
       ],
     },
     {
-      name: "Bluelock Poster AnimeEdits - Kaiser | utopiadreams",
+      name: " 4K Wallpaper Pack Based On Anime | Charecter - of your choice ! | utopiadreams",
       images: [
         require("../assets/UDImages/SS1.png"),
         require("../assets/UDImages/SS2.png"),
         require("../assets/UDImages/SS3.png"),
-      ],
-    },
-    {
-      name: "Clear Case for iPhone® - Isagi | utopiadreams",
-      images: [
-        require("../assets/UDImages/SM1.png"),
-        require("../assets/UDImages/SM2.png"),
-        require("../assets/UDImages/SM3.png"),
-      ],
-    },
-    {
-      name: "Clear Case for Samsung® - SL | utopiadreams",
-      images: [
-        require("../assets/UDImages/PST1.png"),
-        require("../assets/UDImages/PST2.png"),
-        require("../assets/UDImages/PST3.png"),
       ],
     },
   ];

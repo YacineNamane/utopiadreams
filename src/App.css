@@ -2182,6 +2182,17 @@ label span {
     height: auto;
     width: auto;
   }
+  .wallpaper-item img {
+    width: 135px;
+    height: 95%;
+  }
+  .wallpaper-item {
+    height: auto;
+  }
+  .get-button {
+    font-size: 1em;
+    height: 20px;
+  }
   /*about */
   .about-main-container h2 {
     font-size: 1.4em;
@@ -2218,6 +2229,9 @@ label span {
     width: 85%;
   }
   /*Mockup*/
+  .wallpaper-in-mockup {
+    border-radius: 18px;
+  }
   .mockup-container {
     width: auto;
   }

@@ -58,9 +58,13 @@ const WallpaperPage = () => {
           I Rely On your Donations If You would like To Support Me You Can
           Donate Here{" "}
         </p>
-        <NavLink to="/Contribute">
+        <a
+          href="https://buymeacoffee.com/utopiadreams"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span>Support The Creator</span>
-        </NavLink>
+        </a>
       </div>
       <div className="ads-pannel-wallpaperdl">
         <div className="mockup-container">
