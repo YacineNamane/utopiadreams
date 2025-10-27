@@ -55,7 +55,7 @@ const WallpaperPage = () => {
       </div>
       <div className="support-details-wpp">
         <p>
-          I span Rely On your Donations If You would like To Support Me You Can
+          I Rely On your Donations If You would like To Support Me You Can
           Donate Here{" "}
         </p>
         <a
