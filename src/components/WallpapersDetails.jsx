@@ -4,8 +4,8 @@ import Mockup from "../assets/UDImages/Mockup.jpg";
 import xfooter from "../assets/UDImages/xfooter.png";
 import tiktok from "../assets/UDImages/tik-tok.png";
 import insta from "../assets/UDImages/instagram.png";
+import discord from "../assets/UDImages/Discord.png";
 import Loader from "./Loader";
-import { NavLink } from "react-router-dom";
 
 const WallpaperPage = () => {
   const { id } = useParams();
@@ -49,13 +49,13 @@ const WallpaperPage = () => {
     <div className="wallpaper-page">
       <div className="wallpaper-tag">
         <h2>
-          <span>Take a look</span> | This is a preview of how your wallpaper
-          will appear on a phone screen
+          <span>Take a look</span> This is a preview of how your wallpaper will
+          appear on a phone screen
         </h2>
       </div>
       <div className="support-details-wpp">
         <p>
-          I Rely On your Donations If You would like To Support Me You Can
+          I span Rely On your Donations If You would like To Support Me You Can
           Donate Here{" "}
         </p>
         <a
@@ -104,7 +104,6 @@ const WallpaperPage = () => {
                 <img src={xfooter} alt="twitter" />
               </a>
             </div>
-
             <div className="socials-footer-tag">
               <a
                 href="https://fr.pinterest.com/utopiadreamsDesign/"
@@ -123,6 +122,16 @@ const WallpaperPage = () => {
               >
                 {" "}
                 <img src={tiktok} alt="tiktok" />{" "}
+              </a>
+            </div>
+            <div className="socials-footer-tag">
+              <a
+                href="https://discord.gg/2wkbdBxz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img src={discord} alt="discord" />{" "}
               </a>
             </div>
           </div>

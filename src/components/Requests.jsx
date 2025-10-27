@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import discord from "../assets/UDImages/Discord.png";
 import AOS from "aos";
 
 function Requests() {
@@ -27,6 +28,26 @@ function Requests() {
             >
               Request A Wallpaper Here
             </NavLink>
+          </span>{" "}
+          <br />
+          <span className="discord-span">
+            You can also join my Discord here :{" "}
+            <a
+              href="https://discord.gg/2wkbdBxz"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", display: "inline-block" }}
+            >
+              <img
+                src={discord}
+                alt="Discord"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                }}
+              />
+              <span style={{ textDecoration: "underline" }}></span>
+            </a>
           </span>
         </p>
       </div>

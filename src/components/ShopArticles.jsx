@@ -16,7 +16,7 @@ const ShopArticles = () => {
       ],
     },
     {
-      name: " 4K Wallpaper Pack Based On Anime | Charecter - of your choice ! | utopiadreams",
+      name: "4K Anime Wallpaper Pack | Featuring the Character of Your Choice | UtopiaDreams",
       images: [
         require("../assets/UDImages/SS1.png"),
         require("../assets/UDImages/SS2.png"),
