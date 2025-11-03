@@ -77,7 +77,7 @@ const ShopArticles = () => {
   return (
     <div>
       <div className="ud-store-info">
-        <h2>UtopiaDreams Shop</h2>
+        <h1>UtopiaDreams Shop</h1>
         <p>
           I’ve been thinking about launching a shop in the future, and I want to
           make sure it truly resonates with this community. Your feedback will
@@ -87,7 +87,7 @@ const ShopArticles = () => {
           <span> "Your Feedback" </span>will directly shape what’s coming next.
           Let me know !
         </p>
-        <NavLink to={"/Contact"}>Give Your Feedback</NavLink>
+        <NavLink to={"/Contact"}> Give Your Feedback</NavLink>
       </div>
       <div className="shop-container">
         {products.map((product, index) => (

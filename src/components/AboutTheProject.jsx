@@ -9,6 +9,7 @@ function AboutTheProject() {
   }, []);
   return (
     <div className="about-main-container">
+      <h1 data-aos="fade-up">About UtopiaDreams</h1>
       <h2 data-aos="fade-up" id="aboutproject">
         UtopiaDreams Project
       </h2>

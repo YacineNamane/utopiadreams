@@ -83,7 +83,7 @@ const ContactForm = () => {
       </div>
       <div className="contact-form">
         <div className="form-header">
-          <h2>Contact | Our Team - FEEDBACK</h2>
+          <h1>Contact UtopiaDreams </h1>
           <span data-aos="fade-up">Reach out and we'll get in touch ASAP</span>
         </div>
         {messageSent ? (

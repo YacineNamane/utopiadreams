@@ -12,6 +12,7 @@ function Donate() {
   return (
     <div className="contribute-container">
       <div className="donate-wrapper" id="donatetalk">
+        <h1 data-aos="fade-up">Support UtopiaDreams</h1>
         <h2 data-aos="fade-up"> If you would like to support </h2>
         <p>
           <span data-aos="fade-up"> Support the Project.</span> This project has
