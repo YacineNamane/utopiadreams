@@ -86,7 +86,7 @@ function Header() {
                 <NavLink to="/Artworks?filter=Dandadan">Dandadan</NavLink>
                 <NavLink to="/Artworks?filter=Bluelock">Bluelock</NavLink>
                 <NavLink to="/Artworks?filter=HxH">HXH</NavLink>
-                <NavLink to="/Artworks?filter=realistic">One Piece</NavLink>
+                <NavLink to="/Artworks?filter=One Piece">One Piece</NavLink>
                 <NavLink to="/Artworks?filter=Solo Leveling">
                   Solo Leveling
                 </NavLink>

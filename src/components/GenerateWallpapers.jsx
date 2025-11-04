@@ -67,6 +67,7 @@ const GenerateWallpapers = () => {
 
   return (
     <div className="wallpapers-container">
+      <h1> Utopiadreams | Wallpapers 4K</h1>
       <div className="filter-button-box">
         <button
           className="toggle-filters-button"

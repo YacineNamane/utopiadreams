@@ -47,6 +47,7 @@ const WallpaperPage = () => {
   };
   return (
     <div className="wallpaper-page">
+      <h1 className="header-title-h1">{wallpaper.category} | Wallpaper 4K</h1>
       <div className="wallpaper-tag">
         <h2>
           <span>Take a look</span> This is a preview of how your wallpaper will
@@ -55,8 +56,9 @@ const WallpaperPage = () => {
       </div>
       <div className="support-details-wpp">
         <p>
-          I Rely On your Donations If You would like To Support Me You Can
-          Donate Here{" "}
+          You Like <span className="support-span">"the wallpapers?"</span> , You
+          Can <span className="support-span"> "Support me"</span> As A Creator
+          Here.
         </p>
         <a
           href="https://buymeacoffee.com/utopiadreams"
