@@ -180,8 +180,6 @@ function Header() {
             UtopiaDreams — Anime Wallpapers 4K
             <br />
             Demon Slayer • One Piece • Bluelock • Dandadan
-            <br />
-            Anime Themes & More !
           </h1>
         </div>
 
