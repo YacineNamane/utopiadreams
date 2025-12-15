@@ -40,12 +40,12 @@ function Home() {
           </div>
         }
       >
+        <CategoryIntro />
         <Expectations />
         <ScrollingWallpapers />
         <Requests />
         <Niche />
         <Patreon />
-        <CategoryIntro />
         <SocialsSection />
       </Suspense>
 

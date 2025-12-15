@@ -17,7 +17,7 @@ const GenerateWallpapers = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 400,
       once: true,
     });
   }, []);
@@ -44,7 +44,7 @@ const GenerateWallpapers = () => {
         ? images
         : images.filter((image) => image.category === filter);
     setFilteredImages(newFilteredImages);
-    setTimeout(() => setLoading(false), 600);
+    setTimeout(() => setLoading(false), 800);
   }, [filter, images]);
 
   const photos = filteredImages.map((image) => ({
