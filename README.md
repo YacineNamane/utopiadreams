@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# 🌌 UtopiaDreams
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+UtopiaDreams is a mobile wallpaper web platform fully developed and maintained using **React.js**.  
+The project focuses on delivering a smooth, responsive and visually appealing user experience, while providing access to high-quality mobile wallpapers.
 
-## Available Scripts
+Live website: https://utopiadreams.art/
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+UtopiaDreams was built as a **real-world frontend project**, aiming to demonstrate my ability to design, develop and maintain a modern web application with a strong focus on performance, user experience and scalability — all without a backend.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js** (Single Page Application)
+- **JavaScript (ES6+)**
+- **React Router**
+- **HTML / CSS**
+- **Cloudinary** (image hosting & optimization)
+- **GitHub Pages**
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Core Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend & User Experience
+- Smooth and fast **Single Page Application**
+- React-based gallery with **dynamic category filtering**
+- Fully **responsive design** (mobile, tablet, desktop)
+- Subtle hover effects and smooth UI animations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Performance Optimization
+- **Lazy loading** implementation to improve loading speed
+- Optimized image delivery for large image collections
+- External image hosting via **Cloudinary** for better performance 
 
-### `npm run eject`
+### User Interaction
+- **Interactive phone mockup** allowing users to preview wallpapers before downloading
+- **Direct download** button available on each wallpaper
+- Clean and intuitive navigation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## SEO & Visibility
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Implementation of **SEO best practices**
+- Performance-oriented structure to support good search engine ranking
+- Regular addition of new wallpapers to keep content fresh
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Deployment & Maintenance
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Fully **static architecture** (no backend)
+- Deployed and actively maintained in production
+- Continuous content updates
+- Social media presence and content management on:
+  - X
+  - Pinterest
+  - TikTok
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Technical Challenge
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The main challenge was to build a **high-performance and visually engaging web platform** without relying on a backend, while efficiently managing images and ensuring a smooth and responsive user experience across all devices.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
+**Yacine Namane**  
+Frontend Developer / Freelance  
+Focused on React, UI/UX and creative web projects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Skills Demonstrated
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React.js
+- JavaScript
+- Single Page Applications (SPA)
+- Front-End Development
+- Responsive Web Design
+- HTML / CSS
+- Cloudinary
+- SEO Optimization
+- Project Maintenance
+- Social Media Management
