@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import UDLogo from "../assets/UDImages/UtopiaDreams.png";
 import Closeicon from "../assets/UDImages/cross.png";
 import Menuicon from "../assets/UDImages/menu.svg";
-import FP from "../assets/UDImages/A25.png";
+import FP from "../assets/UDImages/A25.webp";
 
 function PhoneBanner() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
