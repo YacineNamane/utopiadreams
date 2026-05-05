@@ -106,7 +106,7 @@ function Footer() {
             <NavLink to="/MentionsLégales">Legal notice</NavLink>
           </div>
           <div>
-            <span>© 2025 UtopiaDreams | All rights reserved.</span>
+            <span>© 2026 UtopiaDreams | All rights reserved.</span>
           </div>
         </div>
         <div className="location-container">

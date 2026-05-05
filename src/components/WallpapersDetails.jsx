@@ -56,8 +56,8 @@ const WallpaperPage = () => {
       </div>
       <div className="support-details-wpp">
         <p>
-          You Like <span className="support-span">"the wallpapers?"</span> , You
-          Can <span className="support-span"> "Support me"</span> As A Creator
+          You Like <span className="support-span">this wallpapers?</span> You
+          Can <span className="support-span"> Support me</span> As A Creator
           Here.
         </p>
         <a
